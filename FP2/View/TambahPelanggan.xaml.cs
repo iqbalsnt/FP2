@@ -15,20 +15,18 @@ using System.Windows.Shapes;
 namespace FP2.View
 {
     /// <summary>
-    /// Interaction logic for DashboardWindows.xaml
+    /// Interaction logic for TambahPelanggan.xaml
     /// </summary>
-    public partial class DashboardWindows : Window
+    public partial class TambahPelanggan : Window
     {
-        public DashboardWindows()
+        public TambahPelanggan()
         {
             InitializeComponent();
         }
 
-        private void DataPelanggan_MouseDown(object sender, MouseButtonEventArgs e)
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
-            DataPelanggan datapelanggan = new DataPelanggan();
-            datapelanggan.Show();
-            Close();
+
         }
     }
 }

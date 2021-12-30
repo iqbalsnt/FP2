@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 
 namespace FP2.Controller
 {
@@ -26,9 +27,9 @@ namespace FP2.Controller
             bool result = pengguna.CekLogin();
             if (result)
             {
-                View.DashboardWindows main = new View.DashboardWindows();
-                main.lblUser.Content = Model.PenggunaModel.namaUser;
-                main.Show();
+                View.DashboardWindows windows = new View.DashboardWindows();
+                windows.lblUser.Content = Model.PenggunaModel.namaUser;
+                windows.Show();
                 login.Close();
             }
             else

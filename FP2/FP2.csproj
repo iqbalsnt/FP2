@@ -55,32 +55,41 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Controller\Dashboard.cs" />
+    <Compile Include="Controller\Pelanggan.cs" />
     <Compile Include="Controller\Pengguna.cs" />
+    <Compile Include="Model\PelangganModel.cs" />
     <Compile Include="Model\PenggunaModel.cs" />
     <Compile Include="Model\ModelTemplate.cs" />
     <Compile Include="View\DashboardWindows.xaml.cs">
       <DependentUpon>DashboardWindows.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View\DataPelanggan.xaml.cs">
+      <DependentUpon>DataPelanggan.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\LoginWindow.xaml.cs">
       <DependentUpon>LoginWindow.xaml</DependentUpon>
     </Compile>
-    <Page Include="MainWindow.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Compile Include="App.xaml.cs">
-      <DependentUpon>App.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="MainWindow.xaml.cs">
-      <DependentUpon>MainWindow.xaml</DependentUpon>
-      <SubType>Code</SubType>
+    <Compile Include="View\TambahPelanggan.xaml.cs">
+      <DependentUpon>TambahPelanggan.xaml</DependentUpon>
     </Compile>
     <Page Include="View\DashboardWindows.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="View\DataPelanggan.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="View\LoginWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\TambahPelanggan.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -112,7 +121,22 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Icon\" />
+    <Resource Include="Icon\bi_people-fill %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icon\bi_people-fill.png" />
+    <Resource Include="Icon\bx_bxs-user-rectangle.png" />
+    <Resource Include="Icon\dashicons_products %281%29.png" />
+    <Resource Include="Icon\dashicons_products.png" />
+    <Resource Include="Icon\eva_settings-2-outline.png" />
+    <Resource Include="Icon\fluent_payment-16-filled.png" />
+    <Resource Include="Icon\grommet-icons_map-location.png" />
+    <Resource Include="Icon\heroicons-outline_logout.png" />
+    <Resource Include="Icon\ic_round-cell-tower.png" />
+    <Resource Include="Icon\image 1.png" />
+    <Resource Include="Icon\user-6781.png" />
+    <Resource Include="Icon\Vector %281%29.png" />
+    <Resource Include="Icon\Vector.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
