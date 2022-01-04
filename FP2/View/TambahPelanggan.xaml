@@ -18,11 +18,11 @@
         <Label Content="No Handphone" HorizontalAlignment="Left" Height="43" Margin="43,96,0,0" Grid.Row="1" VerticalAlignment="Top" Width="169" FontSize="22"/>
         <Label Content="Tanggal Registrasi" HorizontalAlignment="Left" Height="43" Margin="43,0,0,0" Grid.Row="1" VerticalAlignment="Center" Width="212" FontSize="22"/>
         <Label Content="Tanggal Registrasi" HorizontalAlignment="Left" Height="43" Margin="43,225,0,0" Grid.Row="1" VerticalAlignment="Top" Width="212" FontSize="22"/>
-        <TextBox HorizontalAlignment="Left" Height="35" Margin="277,36,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="482" TextAlignment="Left" FontSize="17"/>
-        <TextBox HorizontalAlignment="Left" Height="35" Margin="277,100,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="482" TextAlignment="Left" FontSize="17"/>
-        <TextBox HorizontalAlignment="Left" Height="68" Margin="277,225,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="482" TextAlignment="Left" FontSize="18"/>
-        <DatePicker HorizontalAlignment="Left" Height="35" Margin="277,0,0,0" Grid.Row="1" VerticalAlignment="Center" Width="482" FontSize="17" SelectedDateFormat="Short"/>
-        <Button Content="Tambah" HorizontalAlignment="Left" Height="32" Margin="518,309,0,0" Grid.Row="1" VerticalAlignment="Top" Width="212" Background="#FFCDECD0" />
-        <Button Content="back" HorizontalAlignment="Left" Height="32" Margin="102,309,0,0" Grid.Row="1" VerticalAlignment="Top" Width="212" Background="#FFCDECD0" />
+        <TextBox x:Name="txtNama" HorizontalAlignment="Left" Height="35" Margin="277,36,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="482" TextAlignment="Left" FontSize="17"/>
+        <TextBox x:Name="txtHp" HorizontalAlignment="Left" Height="35" Margin="277,100,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="482" TextAlignment="Left" FontSize="17"/>
+        <TextBox x:Name="txtAlamat" HorizontalAlignment="Left" Height="68" Margin="277,225,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="482" TextAlignment="Left" FontSize="18"/>
+        <DatePicker x:Name="DpRegis" HorizontalAlignment="Left" Height="35" Margin="277,0,0,0" Grid.Row="1" VerticalAlignment="Center" Width="482" FontSize="17" SelectedDateFormat="Short"/>
+        <Button x:Name="BtnTambah" Content="Tambah" HorizontalAlignment="Left" Height="32" Margin="518,309,0,0" Grid.Row="1" VerticalAlignment="Top" Width="212" Background="#FFCDECD0" Click="BtnTambah_Click" />
+        <Button x:Name="BtnBack" Content="back" HorizontalAlignment="Left" Height="32" Margin="102,309,0,0" Grid.Row="1" VerticalAlignment="Top" Width="212" Background="#FFCDECD0" Click="BtnBack_Click" />
     </Grid>
 </Window>

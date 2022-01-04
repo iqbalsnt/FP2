@@ -24,9 +24,31 @@ namespace FP2.View
         public DataPelanggan()
         {
             InitializeComponent();
+
+            //instance
             Pelanggan = new Controller.Pelanggan(this);
+
+            //function utk menampilkan data di datagrd
+            Pelanggan.dataPelanggan();
         }
 
-        
+        private void BtnTambah_Click(object sender, RoutedEventArgs e)
+        {
+            TambahPelanggan tambahPelanggan = new TambahPelanggan();
+            tambahPelanggan.Show();
+            Close();
+        }
+
+        private void btnBack_Click(object sender, RoutedEventArgs e)
+        {
+            DashboardWindows dashboardWindows = new DashboardWindows();
+            dashboardWindows.Show();
+            Close();
+        }
+
+        private void txtCari_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            Pelanggan.dataPelanggan();
+        }
     }
 }

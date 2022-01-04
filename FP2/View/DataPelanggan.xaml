@@ -24,9 +24,9 @@
         </Grid>
         <DataGrid x:Name="DgPelanggan" HorizontalAlignment="Left" Height="222" Margin="43,73,0,0" Grid.Row="1" VerticalAlignment="Top" Width="697" d:ItemsSource="{d:SampleData ItemCount=5}"/>
         <Button Content="Edit" HorizontalAlignment="Left" Height="28" Margin="298,318,0,0" Grid.Row="1" VerticalAlignment="Top" Width="132"/>
-        <Button Content="Tambah" HorizontalAlignment="Left" Height="28" Margin="468,318,0,0" Grid.Row="1" VerticalAlignment="Top" Width="128"/>
-        <Button Content="Back" HorizontalAlignment="Left" Height="28" Margin="639,318,0,0" Grid.Row="1" VerticalAlignment="Top" Width="101"/>
-        <TextBox x:Name="txtCari" HorizontalAlignment="Left" Height="27" Margin="400,22,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="340"/>
+        <Button x:Name="BtnTambah" Content="Tambah" HorizontalAlignment="Left" Height="28" Margin="468,318,0,0" Grid.Row="1" VerticalAlignment="Top" Width="128" Click="BtnTambah_Click"/>
+        <Button x:Name="btnBack" Content="Back" HorizontalAlignment="Left" Height="28" Margin="639,318,0,0" Grid.Row="1" VerticalAlignment="Top" Width="101" Click="btnBack_Click"/>
+        <TextBox x:Name="txtCari" HorizontalAlignment="Left" Height="27" Margin="400,22,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="340" TextChanged="txtCari_TextChanged"/>
         <Button Content="Hapus" HorizontalAlignment="Left" Height="28" Margin="123,318,0,0" Grid.Row="1" VerticalAlignment="Top" Width="132"/>
     </Grid>
 </Window>

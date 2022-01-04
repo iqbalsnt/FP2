@@ -19,14 +19,22 @@ namespace FP2.View
     /// </summary>
     public partial class TambahPelanggan : Window
     {
+        private Controller.TambahPelanggan TbPelanggan;
         public TambahPelanggan()
         {
             InitializeComponent();
+            TbPelanggan = new Controller.TambahPelanggan(this);
+        }
+        private void BtnBack_Click(object sender, RoutedEventArgs e)
+        {
+            DataPelanggan dataPelanggan = new DataPelanggan();
+            dataPelanggan.Show();
+            Close();
         }
 
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        private void BtnTambah_Click(object sender, RoutedEventArgs e)
         {
-
+            TbPelanggan.addPelanggan();
         }
     }
 }
