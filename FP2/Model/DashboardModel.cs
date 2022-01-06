@@ -11,15 +11,17 @@ namespace FP2.Model
     {
         ModelTemplate template;
 
+        public static string totPelanggan;
         public DashboardModel()
         {
             template = new ModelTemplate();
         }
-
+        
         public DataSet totalPelanggan()
         {
-            string query = ("SELECT COUNT(*) FROM Pelanggan");
-            return template.SelectData(query, "Pelanggan");
+            DataSet ds = new DataSet();
+            totPelanggan = ds.Tables[0].Rows[0][0].ToString();
+            return ds;
         }
     }
 }

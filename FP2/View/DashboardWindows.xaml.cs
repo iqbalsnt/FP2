@@ -19,9 +19,12 @@ namespace FP2.View
     /// </summary>
     public partial class DashboardWindows : Window
     {
+        private Controller.Dashboard dashboard;
         public DashboardWindows()
         {
             InitializeComponent();
+            //dashboard = new Controller.Dashboard();
+            //dashboard.TotalPelanggan();
         }
 
         private void DataPelanggan_MouseDown(object sender, MouseButtonEventArgs e)

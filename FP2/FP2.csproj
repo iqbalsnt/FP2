@@ -70,8 +70,14 @@
     <Compile Include="View\DataPelanggan.xaml.cs">
       <DependentUpon>DataPelanggan.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View\EditPelanggan.xaml.cs">
+      <DependentUpon>EditPelanggan.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\LoginWindow.xaml.cs">
       <DependentUpon>LoginWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Pembayaran.xaml.cs">
+      <DependentUpon>Pembayaran.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\TambahPelanggan.xaml.cs">
       <DependentUpon>TambahPelanggan.xaml</DependentUpon>
@@ -88,7 +94,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="View\EditPelanggan.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="View\LoginWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Pembayaran.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

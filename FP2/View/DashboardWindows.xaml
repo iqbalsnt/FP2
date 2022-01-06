@@ -35,7 +35,7 @@
                 <RowDefinition/>
                 <RowDefinition/>
             </Grid.RowDefinitions>
-            <Label Content="15" HorizontalAlignment="Left" VerticalAlignment="Center" Height="25" FontSize="11" Width="32" Margin="84,0,0,0"/>
+            <Label x:Name="LbTotalPelanggan" Content="15" HorizontalAlignment="Left" VerticalAlignment="Center" Height="25" FontSize="11" Width="32" Margin="84,0,0,0"/>
             <Label Content="Total Pelanggan" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" FontSize="11" Width="92" Margin="54,12,0,0" Grid.RowSpan="2"/>
         </Grid>
         <Image HorizontalAlignment="Center" Height="23" Margin="0,97,0,0" Grid.Row="1" VerticalAlignment="Top" Width="22" Source="/Icon/bi_people-fill.png"/>

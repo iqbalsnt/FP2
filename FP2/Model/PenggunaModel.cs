@@ -26,10 +26,12 @@ namespace FP2.Model
         public Boolean CekLogin()
         {
             bool result;
-            
-            if (id == "adham" && password == "shultan")
+            DataSet ds = new DataSet();
+            ds = temp.Select("Akun", "Username = '" + id + "' AND Pass = '" + password + "'");
+            if (ds.Tables[0].Rows.Count > 0)
             {
                 result = true;
+                namaUser = ds.Tables[0].Rows[0][0].ToString();
             }
             else
             {

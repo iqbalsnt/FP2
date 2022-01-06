@@ -19,9 +19,11 @@ namespace FP2.Controller
             dashboardView = new View.DashboardWindows();
         }
 
-        public void TotalPelanggan()
-        {
-                
-        }
+       // public void TotalPelanggan()
+       // {
+         //   dashboardView dashboard = new View.DashboardWindows();
+            
+
+        //}
     }
 }
