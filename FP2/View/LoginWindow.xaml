@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FP2"
         mc:Ignorable="d"
-        Title="Login" Height="450" Width="800"  WindowState="Maximized" Background="#FFCDECD0">
+        Title="Login" Height="450" Width="800" Background="#FFCDECD0">
     <StackPanel Height="350" Width="600" Background="#FF3B9A40" Margin="100,42.02,93.6,27.98">
         <Grid Height="330" Width="580" Margin="10">
             <Grid.ColumnDefinitions>
@@ -30,7 +30,7 @@
                 <PasswordBox x:Name="txtPassword" Margin="40,5,40,0" />
 
                 <Button x:Name="btnLogin" Content="Login" Background="#FF3B9A40" Foreground="White" Margin="40,20,40,0"
-                    Height="27" Click="btnLogin_Click"/>
+                    Height="27" Click="btnLogin_Click" Style="{DynamicResource MenuButton}"/>
             </StackPanel>
         </Grid>
     </StackPanel>

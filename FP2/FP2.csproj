@@ -66,9 +66,6 @@
     <Compile Include="Model\PenggunaModel.cs" />
     <Compile Include="Model\ModelTemplate.cs" />
     <Compile Include="Model\TambahPelangganModel.cs" />
-    <Compile Include="View\Dasboard.xaml.cs">
-      <DependentUpon>Dasboard.xaml</DependentUpon>
-    </Compile>
     <Compile Include="View\DashboardWindows.xaml.cs">
       <DependentUpon>DashboardWindows.xaml</DependentUpon>
     </Compile>
@@ -84,16 +81,12 @@
     <Compile Include="View\Pembayaran.xaml.cs">
       <DependentUpon>Pembayaran.xaml</DependentUpon>
     </Compile>
-    <Compile Include="View\TambahPelanggan.xaml.cs">
-      <DependentUpon>TambahPelanggan.xaml</DependentUpon>
-    </Compile>
     <Compile Include="View\PengaturanAkun.xaml.cs">
       <DependentUpon>PengaturanAkun.xaml</DependentUpon>
     </Compile>
-    <Page Include="View\Dasboard.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
+    <Compile Include="View\TambahPelanggan.xaml.cs">
+      <DependentUpon>TambahPelanggan.xaml</DependentUpon>
+    </Compile>
     <Page Include="View\DashboardWindows.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -118,11 +111,11 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\TambahPelanggan.xaml">
+    <Page Include="View\PengaturanAkun.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\PengaturanAkun.xaml">
+    <Page Include="View\TambahPelanggan.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -172,7 +165,7 @@
     <Resource Include="Icon\Vector.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Icon\bi_people-fill%281%29.png" />
+    <Resource Include="Icon\bi_people-fillW.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

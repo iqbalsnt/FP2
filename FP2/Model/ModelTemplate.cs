@@ -17,7 +17,7 @@ namespace FP2.Model
             //instance
             conn = new SqlConnection();
             //set connection
-            conn.ConnectionString = "Data Source = LAPTOP-7ULPQ249\\SQLEXPRESS;" +
+            conn.ConnectionString = "Data Source = LAPTOP-67LPKOMP;" +
                                     "Initial Catalog = FP;" +
                                     "Integrated Security = True";
 
