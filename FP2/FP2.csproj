@@ -66,6 +66,9 @@
     <Compile Include="Model\PenggunaModel.cs" />
     <Compile Include="Model\ModelTemplate.cs" />
     <Compile Include="Model\TambahPelangganModel.cs" />
+    <Compile Include="View\Dasboard.xaml.cs">
+      <DependentUpon>Dasboard.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\DashboardWindows.xaml.cs">
       <DependentUpon>DashboardWindows.xaml</DependentUpon>
     </Compile>
@@ -87,6 +90,10 @@
     <Compile Include="View\PengaturanAkun.xaml.cs">
       <DependentUpon>PengaturanAkun.xaml</DependentUpon>
     </Compile>
+    <Page Include="View\Dasboard.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="View\DashboardWindows.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

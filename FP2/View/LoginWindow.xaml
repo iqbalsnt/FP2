@@ -5,15 +5,33 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FP2"
         mc:Ignorable="d"
-        Title="Login" Height="450" Width="800">
-    <Grid Background="#FFCDECD0">
-        <Rectangle HorizontalAlignment="Left" Height="301" Margin="70,0,0,0" VerticalAlignment="Center" Width="655" Fill="White"/>
-        <Label Content="AREBI V1.0" HorizontalAlignment="Left" Margin="467,103,0,0" VerticalAlignment="Top" Foreground="#FF4B6919" FontFamily="Bauhaus 93" FontSize="24"/>
-        <Label Content="Username" HorizontalAlignment="Left" Margin="410,146,0,0" VerticalAlignment="Top"/>
-        <Label Content="Password" HorizontalAlignment="Left" Margin="410,216,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtUsername" HorizontalAlignment="Left" Margin="416,177,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="246" Height="28" BorderBrush="#FFC4C4C4" Foreground="#FFC4C4C4" />
-        <PasswordBox x:Name="txtPassword" HorizontalAlignment="Left" Margin="416,247,0,0" VerticalAlignment="Top" Width="245" Height="28" BorderBrush="#FFC4C4C4"/>
-        <Button x:Name="btnLogin" Content="Login" HorizontalAlignment="Left" Height="29" Margin="495,286,0,0" VerticalAlignment="Top" Width="88" Background="#FF077005" Foreground="White" BorderBrush="{x:Null}" Click="btnLogin_Click"/>
-        <Image HorizontalAlignment="Left" Height="258" Margin="146,0,0,0" VerticalAlignment="Center" Width="299" Source="/Icon/image 1.png"/>
-    </Grid>
+        Title="Login" Height="450" Width="800"  WindowState="Maximized" Background="#FFCDECD0">
+    <StackPanel Height="350" Width="600" Background="#FF3B9A40" Margin="100,42.02,93.6,27.98">
+        <Grid Height="330" Width="580" Margin="10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="281.617"/>
+                <ColumnDefinition Width="48.383"/>
+                <ColumnDefinition Width="48.655"/>
+                <ColumnDefinition Width="201.345"/>
+            </Grid.ColumnDefinitions>
+            <StackPanel Background="White" Grid.ColumnSpan="2">
+
+
+                <Image Height="329" Margin="40,0,31.6,0" Source="/FP2;component/Icon/image 1.png" />
+            </StackPanel>
+
+            <StackPanel Background="White" Grid.Column="2" Grid.ColumnSpan="2">
+                <Label Content="Welcome" Margin="40,40,40,0" Padding="0"/>
+                <Label Content="Log In" FontSize="18" FontWeight="Bold" Margin="40,0,40,10" Padding="0"/>
+
+                <Label Content="Username" Margin="40,15,40,0" Padding="0"/>
+                <TextBox x:Name="txtUsername" Margin="40,5,40,0" />
+                <Label Content="Password" Margin="40,15,40,0" Padding="0"/>
+                <PasswordBox x:Name="txtPassword" Margin="40,5,40,0" />
+
+                <Button x:Name="btnLogin" Content="Login" Background="#FF3B9A40" Foreground="White" Margin="40,20,40,0"
+                    Height="27" Click="btnLogin_Click"/>
+            </StackPanel>
+        </Grid>
+    </StackPanel>
 </Window>
