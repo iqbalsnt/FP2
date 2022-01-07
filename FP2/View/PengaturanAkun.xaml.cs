@@ -17,11 +17,18 @@ namespace FP2.View
     /// <summary>
     /// Interaction logic for Window1.xaml
     /// </summary>
-    public partial class Window1 : Window
+    public partial class PengaturanAkun : Window
     {
-        public Window1()
+        public PengaturanAkun()
         {
             InitializeComponent();
+        }
+
+        private void btnBack_Click(object sender, RoutedEventArgs e)
+        {
+            DashboardWindows dashboardWindows = new DashboardWindows();
+            dashboardWindows.Show();
+            Close();
         }
     }
 }

@@ -16,8 +16,8 @@
         <ComboBox HorizontalAlignment="Left" Margin="287,108,0,0" VerticalAlignment="Top" Width="120"/>
         <Label Content="Cari" Margin="7,135,698.6,257"/>
         <TextBox HorizontalAlignment="Left" Margin="7,160,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="400" Height="24"/>
-        <Button Content="Back" HorizontalAlignment="Left" Margin="675,385,0,0" VerticalAlignment="Top" Height="29" Width="107" Foreground="Black" BorderBrush="Black" Background="#FFCDECD0"/>
-        <DataGrid HorizontalAlignment="Left" Height="176" Margin="10,202,0,0" VerticalAlignment="Top" Width="774"/>
+        <Button x:Name="btnBack" Content="Back" HorizontalAlignment="Left" Margin="675,385,0,0" VerticalAlignment="Top" Height="29" Width="107" Foreground="Black" BorderBrush="Black" Background="#FFCDECD0" Click="btnBack_Click"/>
+        <DataGrid x:Name="DgPembayaran" HorizontalAlignment="Left" Height="176" Margin="10,202,0,0" VerticalAlignment="Top" Width="774"/>
         <Label Content="ID Pelanggan" HorizontalAlignment="Left" Margin="30,83,0,0" VerticalAlignment="Top"/>
         <Label Content="Bulan Bayar" HorizontalAlignment="Left" Margin="166,83,0,0" VerticalAlignment="Top"/>
         <Label Content="Paket" HorizontalAlignment="Left" Margin="327,83,0,0" VerticalAlignment="Top"/>
