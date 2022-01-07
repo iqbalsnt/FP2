@@ -16,11 +16,11 @@
         <Image Source="/Icon/Vector (1).png" Margin="42,10,684,352" Grid.RowSpan="2"/>
         <Label Content="Dashboard" HorizontalAlignment="Left" Margin="10,78,0,0" VerticalAlignment="Top" Width="158" Height="57" Foreground="White" FontFamily="Segoe UI" FontSize="26" Grid.RowSpan="2" FontWeight="Bold"/>
         <Label x:Name="DataPelanggan" Content="Data Pelanggan" HorizontalAlignment="Left" Margin="42,45,0,0" VerticalAlignment="Top" Foreground="White" Grid.Row="1" MouseDown="DataPelanggan_MouseDown"/>
-        <Label Content="Paket" HorizontalAlignment="Left" Margin="43,76,0,0" VerticalAlignment="Top" Foreground="White" Grid.Row="1"/>
+        <Label x:Name="LblPaket" Content="Paket" HorizontalAlignment="Left" Margin="43,76,0,0" VerticalAlignment="Top" Foreground="White" Grid.Row="1" MouseDown="LblPaket_MouseDown"/>
         <Image HorizontalAlignment="Left" Height="29" Margin="17,109,0,0" VerticalAlignment="Top" Width="22" Source="/Icon/fluent_payment-16-filled.png" Grid.Row="1"/>
-        <Label Content="Pemabayaran" HorizontalAlignment="Left" Margin="43,109,0,0" VerticalAlignment="Top" Foreground="White" Width="118" FontSize="11" Grid.Row="1"/>
+        <Label x:Name="LblPembayaran" Content="Pemabayaran" HorizontalAlignment="Left" Margin="43,109,0,0" VerticalAlignment="Top" Foreground="White" Width="118" FontSize="11" Grid.Row="1" MouseDown="LblPembayaran_MouseDown"/>
         <Image HorizontalAlignment="Left" Height="22" Margin="17,143,0,0" VerticalAlignment="Top" Width="22" Source="/Icon/eva_settings-2-outline.png" Grid.Row="1"/>
-        <Label Content="Pengaturan" HorizontalAlignment="Left" Margin="43,140,0,0" VerticalAlignment="Top" Foreground="White" Grid.Row="1"/>
+        <Label x:Name="LblPengaturan" Content="Pengaturan" HorizontalAlignment="Left" Margin="43,140,0,0" VerticalAlignment="Top" Foreground="White" Grid.Row="1" MouseDown="LblPengaturan_MouseDown"/>
         <Image HorizontalAlignment="Left" Height="23" Margin="17,314,0,0" VerticalAlignment="Top" Width="22" Source="/Icon/heroicons-outline_logout.png" Grid.Row="1"/>
         <Label Content="Logout" HorizontalAlignment="Left" Margin="43,310,0,0" VerticalAlignment="Top" Foreground="White" Grid.Row="1"/>
         <Label Content="Dashboard" HorizontalAlignment="Left" Margin="178,42,0,0" VerticalAlignment="Top" Width="168" Height="40" Foreground="#FF0C0606" FontFamily="Segoe UI" FontSize="26" Grid.Row="1" FontWeight="Bold"/>

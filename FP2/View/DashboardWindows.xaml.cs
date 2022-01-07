@@ -33,5 +33,24 @@ namespace FP2.View
             datapelanggan.Show();
             Close();
         }
+
+        private void LblPaket_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+
+        }
+
+        private void LblPembayaran_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            Pembayaran pembayaran = new Pembayaran();
+            pembayaran.Show();
+            Close ();
+        }
+
+        private void LblPengaturan_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            PengaturanAkun pengaturanAkun = new PengaturanAkun();
+            pengaturanAkun.Show();
+            Close();
+        }
     }
 }
