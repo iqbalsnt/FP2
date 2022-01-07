@@ -13,7 +13,6 @@
         </Grid.RowDefinitions>
         <Rectangle HorizontalAlignment="Left" Height="435" VerticalAlignment="Top" Width="158" Fill="#FF077005" Grid.RowSpan="2"/>
         <Rectangle HorizontalAlignment="Left" Height="59" Margin="158,0,0,0" VerticalAlignment="Top" Width="642" Fill="#FF877F7F"/>
-        <Label Content="Selamat datang di aplikasi AREBI v1.0" HorizontalAlignment="Left" Margin="372,19,0,0" VerticalAlignment="Top" FontFamily="Franklin Gothic Book"/>
         <Image Source="/Icon/Vector (1).png" Margin="42,10,684,352" Grid.RowSpan="2"/>
         <Label Content="Dashboard" HorizontalAlignment="Left" Margin="10,78,0,0" VerticalAlignment="Top" Width="158" Height="57" Foreground="White" FontFamily="Segoe UI" FontSize="26" Grid.RowSpan="2" FontWeight="Bold"/>
         <Label x:Name="DataPelanggan" Content="Data Pelanggan" HorizontalAlignment="Left" Margin="42,45,0,0" VerticalAlignment="Top" Foreground="White" Grid.Row="1" MouseDown="DataPelanggan_MouseDown"/>
@@ -65,6 +64,8 @@
         </Image>
         <Label Content="AREBI V1.0" HorizontalAlignment="Left" Margin="178,10,0,0" VerticalAlignment="Top" Width="168" Height="40" Foreground="White" FontFamily="Arial Rounded MT Bold" FontSize="26" FontWeight="Bold"/>
         <Label x:Name="lblUser" Content="Halo, Username" HorizontalAlignment="Left" Margin="667,17,0,0" VerticalAlignment="Top" Width="110" Height="26" Foreground="White" FontFamily="Arial Rounded MT Bold" FontWeight="Bold"/>
-        <Border CornerRadius="10" Background="#FFCDECD0" Margin="202,1.8,19.6,311" Grid.Row="1"/>
+        <Border CornerRadius="10" Background="#FFCDECD0" Margin="202,1.8,19.6,311" Grid.Row="1">
+            <Label Content="Selamat datang di aplikasi AREBI v1.0" HorizontalAlignment="Left" VerticalAlignment="Top" FontFamily="Franklin Gothic Book" RenderTransformOrigin="0.957,0.283"/>
+        </Border>
     </Grid>
 </Window>
