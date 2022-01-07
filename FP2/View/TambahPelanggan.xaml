@@ -12,17 +12,17 @@
             <RowDefinition Height="178*"/>
         </Grid.RowDefinitions>
         <Rectangle HorizontalAlignment="Center" Height="78" VerticalAlignment="Center" Width="800" Fill="#FFCDECD0"/>
-        <Image HorizontalAlignment="Left" Height="68" Margin="10,0,0,0" VerticalAlignment="Top" Width="66" Source="/Icon/bi_people-fill.png"/>
-        <Label Content="Pelanggan" HorizontalAlignment="Left" Height="56" Margin="110,-5,0,0" VerticalAlignment="Top" Width="290" FontSize="36" FontWeight="Bold"/>
-        <Label Content="Nama" HorizontalAlignment="Left" Height="43" Margin="43,32,0,0" Grid.Row="1" VerticalAlignment="Top" Width="118" FontSize="22"/>
-        <Label Content="No Handphone" HorizontalAlignment="Left" Height="43" Margin="43,96,0,0" Grid.Row="1" VerticalAlignment="Top" Width="169" FontSize="22"/>
-        <Label Content="Tanggal Registrasi" HorizontalAlignment="Left" Height="43" Margin="43,0,0,0" Grid.Row="1" VerticalAlignment="Center" Width="212" FontSize="22"/>
-        <Label Content="Tanggal Registrasi" HorizontalAlignment="Left" Height="43" Margin="43,225,0,0" Grid.Row="1" VerticalAlignment="Top" Width="212" FontSize="22"/>
-        <TextBox x:Name="txtNama" HorizontalAlignment="Left" Height="35" Margin="277,36,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="482" TextAlignment="Left" FontSize="17"/>
-        <TextBox x:Name="txtHp" HorizontalAlignment="Left" Height="35" Margin="277,100,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="482" TextAlignment="Left" FontSize="17"/>
-        <TextBox x:Name="txtAlamat" HorizontalAlignment="Left" Height="68" Margin="277,225,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="482" TextAlignment="Left" FontSize="18"/>
-        <DatePicker x:Name="DpRegis" HorizontalAlignment="Left" Height="35" Margin="277,0,0,0" Grid.Row="1" VerticalAlignment="Center" Width="482" FontSize="17" SelectedDateFormat="Short"/>
-        <Button x:Name="BtnTambah" Content="Tambah" HorizontalAlignment="Left" Height="32" Margin="518,309,0,0" Grid.Row="1" VerticalAlignment="Top" Width="212" Background="#FFCDECD0" Click="BtnTambah_Click" />
-        <Button x:Name="BtnBack" Content="back" HorizontalAlignment="Left" Height="32" Margin="102,309,0,0" Grid.Row="1" VerticalAlignment="Top" Width="212" Background="#FFCDECD0" Click="BtnBack_Click" />
+        <Image HorizontalAlignment="Left" Height="60" Margin="18,9,0,0" VerticalAlignment="Top" Width="58" Source="/FP2;component/Icon/bi_people-fill(1).png"/>
+        <Label Content="Pelanggan" HorizontalAlignment="Left" Height="56" Margin="98,13,0,0" VerticalAlignment="Top" Width="290" FontSize="36" FontWeight="Bold" Foreground="White" FontFamily="Arial Rounded MT Bold"/>
+        <Label Content="Nama" HorizontalAlignment="Left" Height="43" Margin="35,13.8,0,0" Grid.Row="1" VerticalAlignment="Top" Width="118" FontSize="22" FontFamily="Arial Rounded MT Bold"/>
+        <Label Content="No Handphone" HorizontalAlignment="Left" Height="43" Margin="35,77.8,0,0" Grid.Row="1" VerticalAlignment="Top" Width="169" FontSize="22" FontFamily="Arial Rounded MT Bold"/>
+        <Label Content="Tanggal Registrasi" HorizontalAlignment="Left" Height="43" Margin="35,132.8,0,169" Grid.Row="1" VerticalAlignment="Center" Width="212" FontSize="22" FontFamily="Arial Rounded MT Bold"/>
+        <Label Content="Alamat" HorizontalAlignment="Left" Height="43" Margin="35,206.8,0,0" Grid.Row="1" VerticalAlignment="Top" Width="212" FontSize="22" FontFamily="Arial Rounded MT Bold"/>
+        <TextBox x:Name="txtNama" HorizontalAlignment="Left" Height="35" Margin="269,17.8,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="482" TextAlignment="Left" FontSize="17"/>
+        <TextBox x:Name="txtHp" HorizontalAlignment="Left" Height="35" Margin="269,81.8,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="482" TextAlignment="Left" FontSize="17"/>
+        <TextBox x:Name="txtAlamat" HorizontalAlignment="Left" Height="68" Margin="269,206.8,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="482" TextAlignment="Left" FontSize="18"/>
+        <DatePicker x:Name="DpRegis" HorizontalAlignment="Left" Height="35" Margin="269,136.8,0,173" Grid.Row="1" VerticalAlignment="Center" Width="482" FontSize="17" SelectedDateFormat="Short"/>
+        <Button x:Name="BtnTambah" Content="Tambah" HorizontalAlignment="Left" Height="32" Margin="537,284.8,0,0" Grid.Row="1" VerticalAlignment="Top" Width="212" Background="#FFCDECD0" Click="BtnTambah_Click" />
+        <Button x:Name="BtnBack" Content="Back" HorizontalAlignment="Left" Height="32" Margin="35,284.8,0,0" Grid.Row="1" VerticalAlignment="Top" Width="212" Background="#FFCDECD0" Click="BtnBack_Click" />
     </Grid>
 </Window>

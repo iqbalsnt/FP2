@@ -15,18 +15,13 @@ using System.Windows.Shapes;
 namespace FP2.View
 {
     /// <summary>
-    /// Interaction logic for EditPelanggan.xaml
+    /// Interaction logic for Window1.xaml
     /// </summary>
-    public partial class EditPelanggan : Window
+    public partial class Window1 : Window
     {
-        public EditPelanggan()
+        public Window1()
         {
             InitializeComponent();
-        }
-
-        private void BtnBack_Click(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }

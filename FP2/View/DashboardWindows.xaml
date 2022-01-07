@@ -13,15 +13,10 @@
         </Grid.RowDefinitions>
         <Rectangle HorizontalAlignment="Left" Height="435" VerticalAlignment="Top" Width="158" Fill="#FF077005" Grid.RowSpan="2"/>
         <Rectangle HorizontalAlignment="Left" Height="59" Margin="158,0,0,0" VerticalAlignment="Top" Width="642" Fill="#FF877F7F"/>
-        <Label Content="Aplikasi AREBI v1.0" Margin="178,13,484,32" Foreground="White" FontSize="14"/>
-        <Rectangle HorizontalAlignment="Left" Height="43" Margin="178,74,0,0" VerticalAlignment="Top" Width="596" Fill="#FFCDECD0" StrokeDashCap="Round" StrokeDashOffset="5" StrokeEndLineCap="Round" StrokeLineJoin="Round" StrokeStartLineCap="Round" Grid.RowSpan="2"/>
-        <Label Content="Selamat datang di aplikasi AREBI v1.0" HorizontalAlignment="Left" Margin="197,6,0,0" VerticalAlignment="Top" FontFamily="Franklin Gothic Book" Grid.Row="1"/>
-        <Label x:Name="lblUser" Content="Halo, Username" Margin="664,13,10,32" Foreground="White" FontSize="14"/>
+        <Label Content="Selamat datang di aplikasi AREBI v1.0" HorizontalAlignment="Left" Margin="372,19,0,0" VerticalAlignment="Top" FontFamily="Franklin Gothic Book"/>
         <Image Source="/Icon/Vector (1).png" Margin="42,10,684,352" Grid.RowSpan="2"/>
         <Label Content="Dashboard" HorizontalAlignment="Left" Margin="10,78,0,0" VerticalAlignment="Top" Width="158" Height="57" Foreground="White" FontFamily="Segoe UI" FontSize="26" Grid.RowSpan="2" FontWeight="Bold"/>
-        <Image Margin="17,38,761,278" Source="/Icon/bx_bxs-user-rectangle.png" Grid.Row="1"/>
         <Label x:Name="DataPelanggan" Content="Data Pelanggan" HorizontalAlignment="Left" Margin="42,45,0,0" VerticalAlignment="Top" Foreground="White" Grid.Row="1" MouseDown="DataPelanggan_MouseDown"/>
-        <Image Source="/Icon/dashicons_products.png" Margin="17,77,761,256" Width="22" Grid.Row="1"/>
         <Label Content="Paket" HorizontalAlignment="Left" Margin="43,76,0,0" VerticalAlignment="Top" Foreground="White" Grid.Row="1"/>
         <Image HorizontalAlignment="Left" Height="29" Margin="17,109,0,0" VerticalAlignment="Top" Width="22" Source="/Icon/fluent_payment-16-filled.png" Grid.Row="1"/>
         <Label Content="Pemabayaran" HorizontalAlignment="Left" Margin="43,109,0,0" VerticalAlignment="Top" Foreground="White" Width="118" FontSize="11" Grid.Row="1"/>
@@ -48,5 +43,28 @@
             <Label Content="Produk" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" FontSize="11" Width="92" Margin="72,12,0,0" Grid.RowSpan="2"/>
         </Grid>
         <Image HorizontalAlignment="Left" Height="23" Margin="679,98,0,0" Grid.Row="1" VerticalAlignment="Top" Width="22" Source="/Icon/dashicons_products (1).png"/>
+        <Image HorizontalAlignment="Left" Height="22" Margin="-6,48.8,0,0" Grid.Row="1" VerticalAlignment="Top" Width="22" RenderTransformOrigin="0.5,0.5" Source="/FP2;component/Icon/bx_bxs-user-rectangle.png">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform X="22" Y="2"/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image HorizontalAlignment="Left" Height="22" Margin="-6,108.8,0,0" Grid.Row="1" VerticalAlignment="Top" Width="22" RenderTransformOrigin="0.5,0.5" Source="/FP2;component/Icon/dashicons_products.png">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform X="22" Y="-28"/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Label Content="AREBI V1.0" HorizontalAlignment="Left" Margin="178,10,0,0" VerticalAlignment="Top" Width="168" Height="40" Foreground="White" FontFamily="Arial Rounded MT Bold" FontSize="26" FontWeight="Bold"/>
+        <Label x:Name="lblUser" Content="Halo, Username" HorizontalAlignment="Left" Margin="667,17,0,0" VerticalAlignment="Top" Width="110" Height="26" Foreground="White" FontFamily="Arial Rounded MT Bold" FontWeight="Bold"/>
+        <Border CornerRadius="10" Background="#FFCDECD0" Margin="202,1.8,19.6,311" Grid.Row="1"/>
     </Grid>
 </Window>
