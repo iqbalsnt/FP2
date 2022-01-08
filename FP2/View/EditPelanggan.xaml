@@ -42,8 +42,8 @@
         </Grid>
 
         <Grid Grid.Row="5">
-            <Button x:Name="BtnTambah" Content="Simpan" HorizontalAlignment="Right" Height="28"  Grid.Row="1" VerticalAlignment="Center" Width="128" Click="BtnTambah_Click" Margin="0,0,20,0" BorderBrush="#FFCDECD0" Background="#FFCDECD0"/>
-            <Button x:Name="btnBack" Content="Back" HorizontalAlignment="Right"  VerticalAlignment="Center" Height="29" Width="107" Foreground="Black" BorderBrush="#FFCDECD0" Background="#FFCDECD0" Click="btnBack_Click" Margin="0,0,180,0"/>
+            <Button x:Name="BtnTambah" Content="Simpan" HorizontalAlignment="Right" Height="28"  Grid.Row="1" VerticalAlignment="Center" Width="128" Margin="0,0,20,0" BorderBrush="#FFCDECD0" Background="#FFCDECD0"/>
+            <Button x:Name="btnBack" Content="Back" HorizontalAlignment="Right"  VerticalAlignment="Center" Height="29" Width="107" Foreground="Black" BorderBrush="#FFCDECD0" Background="#FFCDECD0" Margin="0,0,180,0"/>
 
         </Grid>
 

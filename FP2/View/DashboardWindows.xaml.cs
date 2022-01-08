@@ -29,7 +29,9 @@ namespace FP2.View
 
         private void DataPelanggan_MouseDown(object sender, MouseButtonEventArgs e)
         {
-
+            DataPelanggan dataPelanggan = new DataPelanggan();
+            dataPelanggan.Show();
+            Close();
         }
 
         private void Produk_MouseDown(object sender, MouseButtonEventArgs e)
