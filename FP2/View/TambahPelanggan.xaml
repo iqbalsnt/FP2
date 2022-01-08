@@ -18,7 +18,7 @@
 
         <Grid Grid.Row="0" Background="#CDECD0">
             <Image Width="60" Height="60" VerticalAlignment="Center" HorizontalAlignment="Left" Source="/Icon/bi_people-fillW.png" Margin="30,0,0,0"/>
-            <Label x:Name="lblUser" Content="Tambah Pelanggan" FontSize="25"  Foreground="White" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="100,0,0,0" FontFamily="Arial Rounded MT Bold"/>
+            <Label Content="Tambah Pelanggan" FontSize="25"  Foreground="White" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="100,0,0,0" FontFamily="Arial Rounded MT Bold"/>
         </Grid>
 
         <Grid Grid.Row="1">

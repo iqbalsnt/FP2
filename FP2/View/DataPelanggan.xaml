@@ -8,25 +8,48 @@
         Title="DataPelanggan" Height="450" Width="800">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="39*"/>
-            <RowDefinition Height="178*"/>
+            <RowDefinition Height="78"/>
+            <RowDefinition Height="70"/>
+            <RowDefinition/>
+            <RowDefinition Height="50"/>
         </Grid.RowDefinitions>
-        <Rectangle HorizontalAlignment="Center" Height="78" VerticalAlignment="Center" Width="800" Fill="#FFCDECD0"/>
-        <Image HorizontalAlignment="Left" Height="68" Margin="10,0,0,0" VerticalAlignment="Top" Width="66" Source="/Icon/bi_people-fill.png"/>
-        <Label Content="Pelanggan" HorizontalAlignment="Left" Height="56" Margin="110,-5,0,0" VerticalAlignment="Top" Width="290" FontSize="36" FontWeight="Bold"/>
-        <Grid HorizontalAlignment="Left" Height="38" Margin="43,16,0,0" Grid.Row="1" VerticalAlignment="Top" Width="241" Background="#FFCDECD0">
-            <Grid.RowDefinitions>
-                <RowDefinition/>
-                <RowDefinition/>
-            </Grid.RowDefinitions>
-            <Label Content="15" HorizontalAlignment="Left" VerticalAlignment="Center" Height="25" FontSize="11" Width="32" Margin="84,0,0,0"/>
-            <Label Content="Total Pelanggan" HorizontalAlignment="Left" VerticalAlignment="Top" Height="25" FontSize="11" Width="92" Margin="54,12,0,0" Grid.RowSpan="2"/>
+
+        <Grid Grid.Row="0" Background="#CDECD0">
+            <Image Width="60" Height="60" VerticalAlignment="Center" HorizontalAlignment="Left" Source="/Icon/bx_bxs-user-rectangle.png" Margin="30,0,0,0"/>
+            <Label Content="Data Pelanggan" FontSize="25"  Foreground="White" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="100,0,0,0" FontFamily="Arial Rounded MT Bold"/>
         </Grid>
-        <DataGrid x:Name="DgPelanggan" HorizontalAlignment="Left" Height="222" Margin="43,73,0,0" Grid.Row="1" VerticalAlignment="Top" Width="697" d:ItemsSource="{d:SampleData ItemCount=5}"/>
-        <Button Content="Edit" HorizontalAlignment="Left" Height="28" Margin="298,318,0,0" Grid.Row="1" VerticalAlignment="Top" Width="132"/>
-        <Button x:Name="BtnTambah" Content="Tambah" HorizontalAlignment="Left" Height="28" Margin="468,318,0,0" Grid.Row="1" VerticalAlignment="Top" Width="128" Click="BtnTambah_Click"/>
-        <Button x:Name="btnBack" Content="Back" HorizontalAlignment="Left" Height="28" Margin="639,318,0,0" Grid.Row="1" VerticalAlignment="Top" Width="101" Click="btnBack_Click"/>
-        <TextBox x:Name="txtCari" HorizontalAlignment="Left" Height="27" Margin="400,22,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="340" TextChanged="txtCari_TextChanged"/>
-        <Button Content="Hapus" HorizontalAlignment="Left" Height="28" Margin="123,318,0,0" Grid.Row="1" VerticalAlignment="Top" Width="132"/>
+
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="300"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            
+            <Border Grid.Column="0" Background="#CDECD0" Height="50" Width="261" HorizontalAlignment="Left" CornerRadius="10" Margin="30,0,0,0">
+                    <DockPanel>
+                        <Label Content="Total Pelanggan" HorizontalAlignment="left" VerticalAlignment="Center" Foreground="Black" FontWeight="Bold" FontSize="16" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="10,0,0,0"/>
+                        <Label Content="15" HorizontalAlignment="left" VerticalAlignment="Center" Foreground="Black" FontWeight="Bold" FontSize="16" HorizontalContentAlignment="Center"  VerticalContentAlignment="Center" Margin="50,0,0,0"/>
+                        <Image Width="30" Height="30" VerticalAlignment="Center" HorizontalAlignment="Right" Source="/Icon/bi_people-fill (1).png" Margin="0,0,10,0"/>
+                    </DockPanel>
+                </Border>
+
+            <Grid Grid.Column="1">
+                <Label Content="ID Pelanggan" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="Black" FontSize="16" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+                <TextBox x:Name="txtUsername" HorizontalAlignment="Center" Height="27" VerticalAlignment="Center" Width="250" Margin="0,0,20,0" />
+                <Button x:Name="BtnCari" Content="Cari" HorizontalAlignment="Right" Height="27" VerticalAlignment="Center" Width="90" BorderBrush="Black" Background="#FFCDECD0" Margin="0,0,25,0"/>
+            </Grid>
+        </Grid>
+        
+        <Grid Grid.Row="2">
+            <DataGrid d:ItemsSource="{d:SampleData ItemCount=5}" Width="770"/>
+        </Grid>
+
+        <Grid Grid.Row="3">
+            <Button x:Name="BtnBack" Content="Back" HorizontalAlignment="Right" Height="28"  Grid.Row="1" VerticalAlignment="Center" Width="128" Margin="0,0,20,0" BorderBrush="#FFCDECD0" Background="#FFCDECD0"/>
+            <Button x:Name="BtnTambah" Content="Tambah" HorizontalAlignment="Right"  VerticalAlignment="Center" Height="29" Width="107" Foreground="Black" BorderBrush="#FFCDECD0" Background="#FFCDECD0"  Margin="0,0,180,0"/>
+            <Button x:Name="BtnEdit" Content="Edit" HorizontalAlignment="Right"  VerticalAlignment="Center" Height="29" Width="107" Foreground="Black" BorderBrush="#FFCDECD0" Background="#FFCDECD0"  Margin="0,0,325,0"/>
+            <Button x:Name="BtnHapus" Content="Hapus" HorizontalAlignment="Center"  VerticalAlignment="Center" Height="29" Width="107" Foreground="Black" BorderBrush="#FFCDECD0" Background="#FFCDECD0"  Margin="0,0,254,0"/>
+        </Grid>
+
     </Grid>
 </Window>

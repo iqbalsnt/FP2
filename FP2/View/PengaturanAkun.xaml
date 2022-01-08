@@ -7,17 +7,30 @@
         mc:Ignorable="d"
         Title="Window1" Height="450" Width="800">
     <Grid>
-        <Rectangle HorizontalAlignment="Center" Height="78" VerticalAlignment="Center" Width="794" Fill="#FFCDECD0" Margin="0,-1,-0.4,343"/>
-        <Image HorizontalAlignment="Left" Height="58" Margin="21,10,0,0" VerticalAlignment="Top" Width="58" Source="/FP2;component/Icon/eva_settings-2-outline.png"/>
-        <Label Content="Pengaturan Akun" HorizontalAlignment="Left" Margin="102,21,0,0" VerticalAlignment="Top" FontFamily="Arial Rounded MT Bold" FontSize="20" Foreground="White"/>
-        <Rectangle HorizontalAlignment="Center" Height="268" VerticalAlignment="Center" Width="686" Fill="#FFCDECD0" Margin="49,99,58.6,53"/>
-        <Label Content="Ubah Data Akun" HorizontalAlignment="Left" Margin="54,116,0,0" VerticalAlignment="Top" Height="54" Width="215" FontFamily="Arial Rounded MT Bold"/>
-        <Label Content="Username Baru" HorizontalAlignment="Left" Margin="118,183,0,0" VerticalAlignment="Top" Height="55" Width="240" FontFamily="Arial Rounded MT Bold"/>
-        <Label Content="Password Baru" HorizontalAlignment="Left" Margin="122,243,0,0" VerticalAlignment="Top" Height="53" Width="206" FontFamily="Arial Rounded MT Bold"/>
-        <TextBox HorizontalAlignment="Left" Height="47" Margin="328,172,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="377"/>
-        <TextBox HorizontalAlignment="Left" Height="49" Margin="328,238,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="377"/>
-        <Button Content="Simpan" HorizontalAlignment="Left" VerticalAlignment="Top" Width="171" Margin="435,303,0,0" Background="White" Foreground="Black" Height="41"/>
-        <Button x:Name="btnBack" Content="Back" HorizontalAlignment="Left" Margin="675,385,0,0" VerticalAlignment="Top" Height="29" Width="107" Foreground="Black" BorderBrush="Black" Background="#FFCDECD0" Click="btnBack_Click"/>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="78"/>
+            <RowDefinition/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
 
+        <Grid Grid.Row="0" Background="#CDECD0">
+            <Image Width="60" Height="60" VerticalAlignment="Center" HorizontalAlignment="Left" Source="/Icon/eva_settings-2-outline.png" Margin="30,0,0,0"/>
+            <Label Content="Pengaturan Akun" FontSize="25"  Foreground="White" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="100,0,0,0" FontFamily="Arial Rounded MT Bold"/>
+        </Grid>
+
+        <Grid Grid.Row="1">
+            <Border Grid.Column="0" Background="#CDECD0" Height="245" Width="700" HorizontalAlignment="Center" CornerRadius="10"/>
+            <Label Content="Ubah Username dan Password" FontSize="15"  Foreground="Black" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="60,0,0,179" FontFamily="Arial Rounded MT Bold"/>
+            <Label Content="Username Baru" FontSize="15" Foreground="Black" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="100,0,0,50"/>
+            <Label Content="Password Baru" FontSize="15" Foreground="Black" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="100,90,0,0"/>
+            <TextBox x:Name="txtUsername" HorizontalAlignment="Right" Height="27" Margin="0,0,85,43" VerticalAlignment="Center" Width="440" />
+            <TextBox x:Name="txtPassword" HorizontalAlignment="Right" Height="27" Margin="0,0,85,-96" VerticalAlignment="Center" Width="440" />
+            <Button x:Name="BtnSimpan" Content="Simpan" HorizontalAlignment="Right" Height="28" VerticalAlignment="Center" Width="128" Margin="0,0,70,-190" BorderBrush="Black" Background="#FFCDECD0"/>
+        </Grid>
+
+        <Grid Grid.Row="2">
+            <Button x:Name="BtnBack" Content="Back" HorizontalAlignment="Right" Height="28" VerticalAlignment="Center" Width="128" Margin="0,-10,70,-0" BorderBrush="#FFCDECD0" Background="#FFCDECD0"/>
+        </Grid>
+        
     </Grid>
 </Window>
