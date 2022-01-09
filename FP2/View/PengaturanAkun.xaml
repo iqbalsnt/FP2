@@ -19,17 +19,17 @@
         </Grid>
 
         <Grid Grid.Row="1">
-            <Border Grid.Column="0" Background="#CDECD0" Height="245" Width="700" HorizontalAlignment="Center" CornerRadius="10"/>
+            <Border Grid.Column="0" Background="#CDECD0" Height="245" Width="700" HorizontalAlignment="Left" CornerRadius="10" Margin="52,5,0,0"/>
             <Label Content="Ubah Username dan Password" FontSize="15"  Foreground="Black" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="60,0,0,179" FontFamily="Arial Rounded MT Bold"/>
             <Label Content="Username Baru" FontSize="15" Foreground="Black" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="100,0,0,50"/>
             <Label Content="Password Baru" FontSize="15" Foreground="Black" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="100,90,0,0"/>
-            <TextBox x:Name="txtUsername" HorizontalAlignment="Right" Height="27" Margin="0,0,85,43" VerticalAlignment="Center" Width="440" />
-            <TextBox x:Name="txtPassword" HorizontalAlignment="Right" Height="27" Margin="0,0,85,-96" VerticalAlignment="Center" Width="440" />
-            <Button x:Name="BtnSimpan" Content="Simpan" HorizontalAlignment="Right" Height="28" VerticalAlignment="Center" Width="128" Margin="0,0,70,-190" BorderBrush="Black" Background="#FFCDECD0"/>
+            <TextBox x:Name="txtUsername" HorizontalAlignment="Left" Height="27" Margin="270,0,0,43" VerticalAlignment="Center" Width="440" />
+            <TextBox x:Name="txtPassword" HorizontalAlignment="Left" Height="27" Margin="270,0,0,-96" VerticalAlignment="Center" Width="440" />
+            <Button x:Name="BtnSimpan" Content="Simpan" HorizontalAlignment="Left" Height="28" VerticalAlignment="Center" Width="128" Margin="580,0,0,-190" BorderBrush="Black" Background="#FFCDECD0"/>
         </Grid>
 
         <Grid Grid.Row="2">
-            <Button x:Name="BtnBack" Content="Back" HorizontalAlignment="Right" Height="28" VerticalAlignment="Center" Width="128" Margin="0,-10,70,-0" BorderBrush="#FFCDECD0" Background="#FFCDECD0"/>
+            <Button x:Name="BtnBack" Content="Back" HorizontalAlignment="Left" Height="28" VerticalAlignment="Center" Width="128" Margin="610,-10,0,-0" BorderBrush="#FFCDECD0" Background="#FFCDECD0"/>
         </Grid>
         
     </Grid>
