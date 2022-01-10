@@ -58,6 +58,7 @@
     <Compile Include="Controller\Dashboard.cs" />
     <Compile Include="Controller\Pelanggan.cs" />
     <Compile Include="Controller\Pengguna.cs" />
+    <Compile Include="Controller\Produk.cs" />
     <Compile Include="Controller\TambahPelanggan.cs" />
     <Compile Include="Model\DashboardModel.cs" />
     <Compile Include="Model\PelangganModel.cs" />
@@ -65,6 +66,7 @@
     <Compile Include="Model\PembayaranModel.cs" />
     <Compile Include="Model\PenggunaModel.cs" />
     <Compile Include="Model\ModelTemplate.cs" />
+    <Compile Include="Model\ProdukModel.cs" />
     <Compile Include="Model\TambahPelangganModel.cs" />
     <Compile Include="View\DashboardWindows.xaml.cs">
       <DependentUpon>DashboardWindows.xaml</DependentUpon>
