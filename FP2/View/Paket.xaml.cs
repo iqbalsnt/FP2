@@ -19,7 +19,7 @@ namespace FP2.View
     /// </summary>
     public partial class Paket : Window
     {
-        private Controller.Produk Produk;
+        Controller.Produk Produk;
         public static string No_Produk;
 
         public void setStaticVar()

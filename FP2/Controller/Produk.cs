@@ -16,9 +16,14 @@ namespace FP2.Controller
 
         public Produk(View.Paket produkView)
         {
-            tambahProduk = new View.TambahProduk();
+            //tambahProduk = new View.TambahProduk();
             produkModel = new Model.ProdukModel();
             this.produkView = produkView;
+        }
+        public Produk(View.TambahProduk tambahProduk)
+        {
+            produkModel = new Model.ProdukModel();
+            this.tambahProduk = tambahProduk;
         }
 
         public void dataProduk()
@@ -36,8 +41,10 @@ namespace FP2.Controller
             if(result)
             {
                 MessageBox.Show("Berhasil Menambahkan Produk");
-                produkView.Show();
+                View.Paket paket = new View.Paket();
+                paket.Show();
                 tambahProduk.Close();
+                
             }
             {
                 MessageBox.Show("Gagal Menambahkan Produk");

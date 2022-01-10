@@ -86,5 +86,12 @@ namespace FP2.View
             pengaturanAkun.Show();
             Close();
         }
+
+        private void DpLogOut_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            LoginWindow loginWindow = new LoginWindow();
+            loginWindow.Show();
+            Close();
+        }
     }
 }

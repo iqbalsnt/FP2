@@ -19,15 +19,16 @@ namespace FP2.View
     /// </summary>
     public partial class TambahProduk : Window
     {
-        private Controller.Produk Produk;
+        Controller.Produk produk;
         public TambahProduk()
         {
             InitializeComponent();
+            produk = new Controller.Produk(this);
         }
 
         private void BtnSimpan_Click(object sender, RoutedEventArgs e)
         {
-            Produk.insertProduk();
+            produk.insertProduk();
         }
 
         private void BtnBack_Click(object sender, RoutedEventArgs e)
