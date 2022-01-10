@@ -35,7 +35,9 @@ namespace FP2.View
 
         private void LblProduk_MouseDown(object sender, MouseButtonEventArgs e)
         {
-
+            Paket paket = new Paket();
+            paket.Show();
+            Close();
         }
 
         private void LblPembayaran_MouseDown(object sender, MouseButtonEventArgs e)
