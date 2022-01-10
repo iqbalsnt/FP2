@@ -23,8 +23,7 @@ namespace FP2.View
         {
             InitializeComponent();
         }
-
-        private void btnBack_Click(object sender, RoutedEventArgs e)
+        private void BtnBack_MouseDown(object sender, MouseButtonEventArgs e)
         {
             DashboardWindows dashboardWindows = new DashboardWindows();
             dashboardWindows.Show();

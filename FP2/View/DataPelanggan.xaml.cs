@@ -21,6 +21,18 @@ namespace FP2.View
     {
         //deklarasi objek controller
         private Controller.Pelanggan Pelanggan;
+        public static string No_Pelanggan;
+
+        public void SetStaticVar()
+        {
+            No_Pelanggan = "";
+        }
+
+        public void getData()
+        {
+            object item = DgPelanggan.SelectedItem;
+            No_Pelanggan = (DgPelanggan.SelectedCells[0].Column.GetCellContent(item)as TextBlock).Text;
+        }
         public DataPelanggan()
         {
             InitializeComponent();
@@ -32,23 +44,42 @@ namespace FP2.View
             Pelanggan.dataPelanggan();
         }
 
-        private void BtnTambah_Click(object sender, RoutedEventArgs e)
+        private void txtCari_TextChanged(object sender, TextChangedEventArgs e)
         {
-            TambahPelanggan tambahPelanggan = new TambahPelanggan();
-            tambahPelanggan.Show();
-            Close();
+            Pelanggan.dataPelanggan();
         }
 
-        private void btnBack_Click(object sender, RoutedEventArgs e)
+        private void BtnHapus_Click(object sender, RoutedEventArgs e)
+        {
+            object item = DgPelanggan.SelectedItem;
+            if(item == null)
+            {
+                MessageBox.Show("Silahkan Pilih Dulu");
+            }
+            else
+            {
+                getData();
+                if(MessageBox.Show("Yakin Ingin Hapus Data","Question",MessageBoxButton.YesNo,MessageBoxImage.Warning) == MessageBoxResult.Yes)
+                {
+                    Pelanggan.Delete();
+                }
+                SetStaticVar();
+                Pelanggan.dataPelanggan();
+            }
+        }
+
+        private void BtnBack_MouseDown(object sender, MouseButtonEventArgs e)
         {
             DashboardWindows dashboardWindows = new DashboardWindows();
             dashboardWindows.Show();
             Close();
         }
 
-        private void txtCari_TextChanged(object sender, TextChangedEventArgs e)
+        private void BtnTambah_MouseDown(object sender, MouseButtonEventArgs e)
         {
-            Pelanggan.dataPelanggan();
+            TambahPelanggan tambahPelanggan = new TambahPelanggan();
+            tambahPelanggan.Show();
+            Close();
         }
     }
 }

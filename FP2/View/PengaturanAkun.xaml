@@ -29,7 +29,7 @@
         </Grid>
 
         <Grid Grid.Row="2">
-            <Button x:Name="BtnBack" Content="Back" HorizontalAlignment="Left" Height="28" VerticalAlignment="Center" Width="128" Margin="610,-10,0,-0" BorderBrush="#FFCDECD0" Background="#FFCDECD0"/>
+            <Button x:Name="BtnBack" Content="Back" HorizontalAlignment="Left" Height="28" VerticalAlignment="Center" Width="128" Margin="610,-10,0,-0" BorderBrush="#FFCDECD0" Background="#FFCDECD0" MouseDown="BtnBack_MouseDown"/>
         </Grid>
         
     </Grid>

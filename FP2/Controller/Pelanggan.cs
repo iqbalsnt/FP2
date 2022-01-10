@@ -28,5 +28,19 @@ namespace FP2.Controller
             DataSet data = PelangganModel.SelectPelanggan(cari);
             DataPelanggan.DgPelanggan.ItemsSource = data.Tables[0].DefaultView;
         }
+
+        public void Delete()
+        {
+            PelangganModel.No_Pelanggan = View.DataPelanggan.No_Pelanggan;
+            bool result = PelangganModel.deletePelanggan();
+            if(result)
+            {
+                MessageBox.Show("Data Pelanggan Berhasil Dihapus");
+            }
+            else
+            {
+                MessageBox.Show("Data Pelanggan Gagal Berhasil Dihapus");
+            }
+        }
     }
 }

@@ -45,10 +45,10 @@
         </Grid>
 
         <Grid Grid.Row="3">
-            <Button x:Name="BtnBack" Content="Back" HorizontalAlignment="Left" Height="28"  Grid.Row="1" VerticalAlignment="Center" Width="128" Margin="630,0,0,0" BorderBrush="#FFCDECD0" Background="#FFCDECD0"/>
-            <Button x:Name="BtnTambah" Content="Tambah" HorizontalAlignment="Left"  VerticalAlignment="Center" Height="29" Width="107" Foreground="Black" BorderBrush="#FFCDECD0" Background="#FFCDECD0"  Margin="500,0,-300,0"/>
+            <Button x:Name="BtnBack" Content="Back" HorizontalAlignment="Left" Height="28"  Grid.Row="1" VerticalAlignment="Center" Width="128" Margin="630,0,0,0" BorderBrush="#FFCDECD0" Background="#FFCDECD0" MouseDown="BtnBack_MouseDown"/>
+            <Button x:Name="BtnTambah" Content="Tambah" HorizontalAlignment="Left"  VerticalAlignment="Center" Height="29" Width="107" Foreground="Black" BorderBrush="#FFCDECD0" Background="#FFCDECD0"  Margin="500,0,-300,0" MouseDown="BtnTambah_MouseDown"/>
             <Button x:Name="BtnEdit" Content="Edit" HorizontalAlignment="Left"  VerticalAlignment="Center" Height="29" Width="107" Foreground="Black" BorderBrush="#FFCDECD0" Background="#FFCDECD0"  Margin="360,0,0,0"/>
-            <Button x:Name="BtnHapus" Content="Hapus" HorizontalAlignment="Left"  VerticalAlignment="Center" Height="29" Width="107" Foreground="Black" BorderBrush="#FFCDECD0" Background="#FFCDECD0"  Margin="220,0,254,0"/>
+            <Button x:Name="BtnHapus" Content="Hapus" HorizontalAlignment="Left"  VerticalAlignment="Center" Height="29" Width="107" Foreground="Black" BorderBrush="#FFCDECD0" Background="#FFCDECD0"  Margin="220,0,254,0" Click="BtnHapus_Click"/>
         </Grid>
 
     </Grid>
