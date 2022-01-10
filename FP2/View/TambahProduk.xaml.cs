@@ -10,16 +10,17 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace FP2.View
 {
     /// <summary>
-    /// Interaction logic for TambahPage.xaml
+    /// Interaction logic for TambahProduk.xaml
     /// </summary>
-    public partial class TambahPage : Window
+    public partial class TambahProduk : Page
     {
-        public TambahPage()
+        public TambahProduk()
         {
             InitializeComponent();
         }
