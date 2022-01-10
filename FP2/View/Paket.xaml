@@ -41,7 +41,7 @@
         </Grid>
 
         <Grid Grid.Row="2">
-            <DataGrid x:Name="DgPelanggan" d:ItemsSource="{d:SampleData ItemCount=5}" Width="740" HorizontalAlignment="Left" Margin="25,0,0,0"/>
+            <DataGrid x:Name="DgProduk" d:ItemsSource="{d:SampleData ItemCount=5}" Width="740" HorizontalAlignment="Left" Margin="25,0,0,0"/>
         </Grid>
 
         <Grid Grid.Row="3">

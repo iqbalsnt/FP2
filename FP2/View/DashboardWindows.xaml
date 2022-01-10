@@ -27,22 +27,22 @@
                 <RowDefinition Height="50"/>
             </Grid.RowDefinitions>
 
-            <DockPanel Grid.Row="3" HorizontalAlignment="Center" Width="120" MouseDown="Produk_MouseDown" Style="{DynamicResource MenuDockPanel}">
+            <DockPanel x:Name="DpProduk" Grid.Row="3" HorizontalAlignment="Center" Width="120" Style="{DynamicResource MenuDockPanel}" MouseDown="DpProduk_MouseDown">
                 <Image Width="30" Height="30" VerticalAlignment="Center" HorizontalAlignment="Left" Source="/Icon/dashicons_products.png"/>
                 <Label x:Name="LblProduk" Content="Produk" HorizontalAlignment="Right" VerticalAlignment="Center" Foreground="White" FontSize="10" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial Rounded MT Bold" Margin="0,0,42,0" MouseDown="LblProduk_MouseDown"/>
             </DockPanel>
 
-            <DockPanel Grid.Row="1" HorizontalAlignment="Center" Width="120" MouseDown="DataPelanggan_MouseDown" Style="{DynamicResource MenuDockPanel}">
+            <DockPanel x:Name="DpDataPelanggan" Grid.Row="1" HorizontalAlignment="Center" Width="120" Style="{DynamicResource MenuDockPanel}" MouseDown="DpDataPelanggan_MouseDown">
                 <Image Width="30" Height="30" VerticalAlignment="Center" HorizontalAlignment="Left" Source="/Icon/bx_bxs-user-rectangle.png"/>
                 <Label x:Name="LblDataPelanggan" Content="Data Pelanggan" HorizontalAlignment="Right" VerticalAlignment="Center" Foreground="White" FontSize="10" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial Rounded MT Bold" MouseDown="LblDataPelanggan_MouseDown"/>
             </DockPanel>
 
-            <DockPanel Grid.Row="5" HorizontalAlignment="Center" Width="120" MouseDown="Pembayaran_MouseDown" Style="{DynamicResource MenuDockPanel}">
+            <DockPanel x:Name="DpPembayaran" Grid.Row="5" HorizontalAlignment="Center" Width="120" Style="{DynamicResource MenuDockPanel}" MouseDown="DpPembayaran_MouseDown">
                 <Image Width="30" Height="30" VerticalAlignment="Center" HorizontalAlignment="Left" Source="/Icon/fluent_payment-16-filled.png"/>
                 <Label x:Name="LblPembayaran" Content="Pembayaran" HorizontalAlignment="Right" VerticalAlignment="Center" Foreground="White" FontSize="10" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial Rounded MT Bold" Margin="0,0,20,0" MouseDown="LblPembayaran_MouseDown"/>
             </DockPanel>
 
-            <DockPanel Grid.Row="7" HorizontalAlignment="Center" Width="120" MouseDown="Pengaturan_MouseDown" Style="{DynamicResource MenuDockPanel}">
+            <DockPanel x:Name="DpPengaturan" Grid.Row="7" HorizontalAlignment="Center" Width="120" MouseDown="Pengaturan_MouseDown" Style="{DynamicResource MenuDockPanel}">
                 <Image Width="30" Height="30" VerticalAlignment="Center" HorizontalAlignment="Left" Source="/Icon/eva_settings-2-outline.png"/>
                 <Label x:Name="LblPengaturan" Content="Pengaturan" Foreground="White" FontSize="10" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontFamily="Arial Rounded MT Bold" Margin="0,0,20,0" Width="68" MouseDown="LblPengaturan_MouseDown"/>
             </DockPanel>

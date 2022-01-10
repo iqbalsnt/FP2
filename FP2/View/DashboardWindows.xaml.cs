@@ -53,5 +53,38 @@ namespace FP2.View
             pengaturanAkun.Show();
             Close();
         }
+
+        private void DockPanel_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+
+        }
+
+        private void DpDataPelanggan_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            DataPelanggan dataPelanggan = new DataPelanggan();
+            dataPelanggan.Show();
+            Close();
+        }
+
+        private void DpProduk_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            Paket paket = new Paket();
+            paket.Show();
+            Close();
+        }
+
+        private void DpPembayaran_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            Pembayaran pembayaran = new Pembayaran();
+            pembayaran.Show();
+            Close();
+        }
+
+        private void Pengaturan_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            PengaturanAkun pengaturanAkun = new PengaturanAkun();
+            pengaturanAkun.Show();
+            Close();
+        }
     }
 }
