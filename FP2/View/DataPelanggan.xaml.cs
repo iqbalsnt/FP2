@@ -44,20 +44,6 @@ namespace FP2.View
             Pelanggan.dataPelanggan();
         }
 
-        private void BtnTambah_Click(object sender, RoutedEventArgs e)
-        {
-            TambahPelanggan tambahPelanggan = new TambahPelanggan();
-            tambahPelanggan.Show();
-            Close();
-        }
-
-        private void btnBack_Click(object sender, RoutedEventArgs e)
-        {
-            DashboardWindows dashboardWindows = new DashboardWindows();
-            dashboardWindows.Show();
-            Close();
-        }
-
         private void txtCari_TextChanged(object sender, TextChangedEventArgs e)
         {
             Pelanggan.dataPelanggan();
@@ -80,6 +66,20 @@ namespace FP2.View
                 SetStaticVar();
                 Pelanggan.dataPelanggan();
             }
+        }
+
+        private void BtnBack_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            DashboardWindows dashboardWindows = new DashboardWindows();
+            dashboardWindows.Show();
+            Close();
+        }
+
+        private void BtnTambah_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            TambahPelanggan tambahPelanggan = new TambahPelanggan();
+            tambahPelanggan.Show();
+            Close();
         }
     }
 }

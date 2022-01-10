@@ -23,10 +23,11 @@ namespace FP2.View
         {
             InitializeComponent();
         }
-
-        private void BtnBack_Click(object sender, RoutedEventArgs e)
+        private void btnBack_MouseDown(object sender, MouseButtonEventArgs e)
         {
-
+            DataPelanggan dataPelanggan = new DataPelanggan();
+            dataPelanggan.Show();
+            Close();
         }
     }
 }
