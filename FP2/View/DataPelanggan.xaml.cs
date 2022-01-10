@@ -21,6 +21,18 @@ namespace FP2.View
     {
         //deklarasi objek controller
         private Controller.Pelanggan Pelanggan;
+        public static string No_Pelanggan;
+
+        public void SetStaticVar()
+        {
+            No_Pelanggan = "";
+        }
+
+        public void getData()
+        {
+            object item = DgPelanggan.SelectedItem;
+            No_Pelanggan = (DgPelanggan.SelectedCells[0].Column.GetCellContent(item)as TextBlock).Text;
+        }
         public DataPelanggan()
         {
             InitializeComponent();
@@ -49,6 +61,25 @@ namespace FP2.View
         private void txtCari_TextChanged(object sender, TextChangedEventArgs e)
         {
             Pelanggan.dataPelanggan();
+        }
+
+        private void BtnHapus_Click(object sender, RoutedEventArgs e)
+        {
+            object item = DgPelanggan.SelectedItem;
+            if(item == null)
+            {
+                MessageBox.Show("Silahkan Pilih Dulu");
+            }
+            else
+            {
+                getData();
+                if(MessageBox.Show("Yakin Ingin Hapus Data","Question",MessageBoxButton.YesNo,MessageBoxImage.Warning) == MessageBoxResult.Yes)
+                {
+                    Pelanggan.Delete();
+                }
+                SetStaticVar();
+                Pelanggan.dataPelanggan();
+            }
         }
     }
 }

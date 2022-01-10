@@ -17,8 +17,8 @@ namespace FP2.Model
             //instance
             conn = new SqlConnection();
             //set connection
-            conn.ConnectionString = "Data Source = LAPTOP-67LPKOMP;" +
-                                    "Initial Catalog = FP;" +
+            conn.ConnectionString = "Data Source = MSI;" +
+                                    "Initial Catalog = FP2;" +
                                     "Integrated Security = True";
 
             return conn;

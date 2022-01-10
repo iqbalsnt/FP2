@@ -37,5 +37,12 @@ namespace FP2.Model
             }
             return dp;
         }
+
+        //delete pelanggan model
+        public bool deletePelanggan()
+        {
+            string data = ("No_Pelanggan = '" + No_Pelanggan + "'");
+            return template.Delete("Pelanggan", data);
+        }
     }
 }
