@@ -26,27 +26,26 @@ namespace FP2.View
             //dashboard = new Controller.Dashboard();
             //dashboard.TotalPelanggan();
         }
-
-        private void DataPelanggan_MouseDown(object sender, MouseButtonEventArgs e)
+        private void LblDataPelanggan_MouseDown(object sender, MouseButtonEventArgs e)
         {
             DataPelanggan dataPelanggan = new DataPelanggan();
             dataPelanggan.Show();
             Close();
         }
 
-        private void Produk_MouseDown(object sender, MouseButtonEventArgs e)
+        private void LblProduk_MouseDown(object sender, MouseButtonEventArgs e)
         {
 
         }
 
-        private void Pembayaran_MouseDown(object sender, MouseButtonEventArgs e)
+        private void LblPembayaran_MouseDown(object sender, MouseButtonEventArgs e)
         {
             Pembayaran pembayaran = new Pembayaran();
             pembayaran.Show();
             Close();
         }
 
-        private void Pengaturan_MouseDown(object sender, MouseButtonEventArgs e)
+        private void LblPengaturan_MouseDown(object sender, MouseButtonEventArgs e)
         {
             PengaturanAkun pengaturanAkun = new PengaturanAkun();
             pengaturanAkun.Show();
