@@ -19,6 +19,7 @@ namespace FP2.View
     /// </summary>
     public partial class TambahPelanggan : Window
     {
+        private Controller.TambahPelanggan controller;
         public TambahPelanggan()
         {
             InitializeComponent();
@@ -26,12 +27,17 @@ namespace FP2.View
 
         private void BtnTambah_Click(object sender, RoutedEventArgs e)
         {
-
+            controller.addPelanggan();
         }
 
         private void btnBack_Click(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        private void BtnTambah_Click_1(object sender, RoutedEventArgs e)
+        {
+            controller.addPelanggan();
         }
     }
 }

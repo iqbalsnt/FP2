@@ -39,5 +39,11 @@ namespace FP2.Model
             string data = "'" + Nama_Produk + "','" + Harga + "'";
             return template.Insert("Produk", data);
         }
+
+        public bool deleteProduk()
+        {
+            string kondisi = ("No_Produk = '" + No_Produk + "'");
+            return template.Delete("Produk", kondisi);
+        }
     }
 }

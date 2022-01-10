@@ -24,7 +24,7 @@ namespace FP2.Controller
         {
             TambahPelangganModel.Nama = tambahPelanggan.txtNama.Text;
             TambahPelangganModel.No_HP = tambahPelanggan.txtHp.Text;
-            TambahPelangganModel.Tgl_Registrasi = tambahPelanggan.DpRegis.Text;
+            TambahPelangganModel.Tgl_Registrasi = tambahPelanggan.DpRegis.SelectedDate.ToString();
             TambahPelangganModel.Alamat = tambahPelanggan.txtAlamat.Text;
             bool result = TambahPelangganModel.insertPelanggan();
             if (result)
