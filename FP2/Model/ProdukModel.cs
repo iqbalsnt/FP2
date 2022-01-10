@@ -45,5 +45,12 @@ namespace FP2.Model
             string kondisi = ("No_Produk = '" + No_Produk + "'");
             return template.Delete("Produk", kondisi);
         }
+
+        public bool updateProduk()
+        {
+            string data = "Nama_Produk = '" + Nama_Produk + "', Harga = '" + Harga + "'";
+            string kondisi = "No_Produk = '" + No_Produk + "'";
+            return template.Update("Produk",data,kondisi);
+        }
     }
 }

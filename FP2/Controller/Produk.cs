@@ -13,6 +13,7 @@ namespace FP2.Controller
         private Model.ProdukModel produkModel;
         private View.Paket produkView;
         private View.TambahProduk tambahProduk;
+        private View.UpdateProduk upProduk;
 
         public Produk(View.Paket produkView)
         {
@@ -24,6 +25,12 @@ namespace FP2.Controller
         {
             produkModel = new Model.ProdukModel();
             this.tambahProduk = tambahProduk;
+        }
+
+        public Produk(View.UpdateProduk upProduk)
+        {
+            produkModel = new Model.ProdukModel();
+            this.upProduk = upProduk;
         }
 
         public void dataProduk()
@@ -63,6 +70,28 @@ namespace FP2.Controller
             {
                 MessageBox.Show("Data Produk Gagal Dihapus");
             }
+        }
+
+        public void updateProduk()
+        {
+            produkModel.No_Produk = View.Paket.No_Produk;
+            produkModel.Nama_Produk = upProduk.txtNamaProduk.Text;
+            produkModel.Harga = upProduk.txtHarga.Text;
+
+            bool result = produkModel.updateProduk();
+            if(result)
+            {
+                MessageBox.Show("Data Produk Berhasil Diubah");
+                View.Paket paket = new View.Paket();
+                View.UpdateProduk update = new View.UpdateProduk();
+                paket.Show();
+                update.Close();
+            }
+            else
+            {
+                MessageBox.Show("Gagal Mengubah Data Produk");
+            }
+
         }
     }
 }

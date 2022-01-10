@@ -95,6 +95,9 @@
     <Compile Include="View\TambahProduk.xaml.cs">
       <DependentUpon>TambahProduk.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View\UpdateProduk.xaml.cs">
+      <DependentUpon>UpdateProduk.xaml</DependentUpon>
+    </Compile>
     <Page Include="View\DashboardWindows.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -132,6 +135,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\TambahProduk.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\UpdateProduk.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
