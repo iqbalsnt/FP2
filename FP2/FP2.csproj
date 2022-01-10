@@ -89,11 +89,11 @@
     <Compile Include="View\PengaturanAkun.xaml.cs">
       <DependentUpon>PengaturanAkun.xaml</DependentUpon>
     </Compile>
-    <Compile Include="View\TambahPage.xaml.cs">
-      <DependentUpon>TambahPage.xaml</DependentUpon>
-    </Compile>
     <Compile Include="View\TambahPelanggan.xaml.cs">
       <DependentUpon>TambahPelanggan.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\TambahProduk.xaml.cs">
+      <DependentUpon>TambahProduk.xaml</DependentUpon>
     </Compile>
     <Page Include="View\DashboardWindows.xaml">
       <SubType>Designer</SubType>
@@ -127,11 +127,11 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\TambahPage.xaml">
+    <Page Include="View\TambahPelanggan.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="View\TambahPelanggan.xaml">
+    <Page Include="View\TambahProduk.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
