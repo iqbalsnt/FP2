@@ -1,0 +1,36 @@
+﻿<Window x:Class="FP2.View.TambahPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FP2.View"
+        mc:Ignorable="d"
+        Title="TambahPage" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="78"/>
+            <RowDefinition/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0" Background="#CDECD0">
+            <Image Width="60" Height="60" VerticalAlignment="Center" HorizontalAlignment="Left" Source="/Icon/dashicons_products.png" Margin="30,0,0,0"/>
+            <Label Content="Tambah Produk" FontSize="25"  Foreground="White" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="100,0,0,0" FontFamily="Arial Rounded MT Bold"/>
+        </Grid>
+
+        <Grid Grid.Row="1">
+            <Border Grid.Column="0" Background="#CDECD0" Height="245" Width="700" HorizontalAlignment="Left" CornerRadius="10" Margin="52,5,0,0"/>
+            <Label Content="Tambah produk baru anda" FontSize="15"  Foreground="Black" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="60,0,0,179" FontFamily="Arial Rounded MT Bold"/>
+            <Label Content="Nama Produk" FontSize="15" Foreground="Black" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="100,0,0,50"/>
+            <Label Content="Harga" FontSize="15" Foreground="Black" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="100,90,0,0"/>
+            <TextBox x:Name="txtUsername" HorizontalAlignment="Left" Height="27" Margin="270,0,0,43" VerticalAlignment="Center" Width="440" />
+            <TextBox x:Name="txtPassword" HorizontalAlignment="Left" Height="27" Margin="270,0,0,-96" VerticalAlignment="Center" Width="440" />
+            <Button x:Name="BtnSimpan" Content="Simpan" HorizontalAlignment="Left" Height="28" VerticalAlignment="Center" Width="128" Margin="580,0,0,-190" Background="White" Foreground="Black" FontWeight="Bold"/>
+        </Grid>
+
+        <Grid Grid.Row="2">
+            <Button x:Name="BtnBack" Content="Back" HorizontalAlignment="Left" Height="28" VerticalAlignment="Center" Width="128" Margin="610,-10,0,-0" BorderBrush="#FFCDECD0" Background="#FFCDECD0" MouseDown="BtnBack_MouseDown"/>
+        </Grid>
+
+    </Grid>
+</Window>
