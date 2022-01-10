@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data;
 
 namespace FP2.Model
 {
@@ -16,6 +17,21 @@ namespace FP2.Model
         public ProdukModel()
         {
             template = new ModelTemplate();
+        }
+
+        public DataSet DataProduk(string cari)
+        {
+            DataSet ds = new DataSet();
+            if(cari == "")
+            {
+                ds = template.Select("Produk",null);
+            }
+            else
+            {
+                string kondisi = "No_Produk LIKE '%" + cari + "%' OR Nama_Produk LIKE '%" + cari + "%' OR Harga LIKE '%" + cari + "%'";
+                ds = template.Select("Produk", kondisi);
+            }
+            return ds;
         }
 
         public bool insertProduk()

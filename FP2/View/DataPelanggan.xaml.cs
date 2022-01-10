@@ -81,5 +81,19 @@ namespace FP2.View
             tambahPelanggan.Show();
             Close();
         }
+
+        private void BtnBack_Click(object sender, RoutedEventArgs e)
+        {
+            DashboardWindows dashboardWindows = new DashboardWindows();
+            dashboardWindows.Show();
+            Close();
+        }
+
+        private void BtnTambah_Click(object sender, RoutedEventArgs e)
+        {
+            TambahPelanggan tambahPelanggan = new TambahPelanggan();
+            tambahPelanggan.Show();
+            Close();
+        }
     }
 }
