@@ -11,13 +11,19 @@ namespace FP2.Controller
     {
         //declare object
         Model.PenggunaModel pengguna;
-        View.LoginWindow login;
-
+        private View.LoginWindow login;
+        private View.PengaturanAkun akun;
         //instance
         public Pengguna(View.LoginWindow login)
         {
             pengguna = new Model.PenggunaModel();
             this.login = login;
+        }
+
+        public Pengguna(View.PengaturanAkun akun)
+        {
+            pengguna = new Model.PenggunaModel();
+            this.akun = akun;
         }
 
         public void Login()
@@ -39,6 +45,24 @@ namespace FP2.Controller
                 login.txtPassword.Password = "";
                 login.txtUsername.Focus();
             }
+        }
+
+        public void updateuser()
+        {
+            pengguna.id = akun.txtUsername.Text;
+            pengguna.password = akun.txtPassword.Text;
+            bool result = pengguna.updateUser();
+            if(result)
+            {
+                MessageBox.Show("Berhasil Update Akun");
+                View.DashboardWindows windows = new View.DashboardWindows();
+                windows.Show();
+            }
+            else
+            {
+                MessageBox.Show("Gagal Update Akun");
+            }
+            
         }
     }
 }

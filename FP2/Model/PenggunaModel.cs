@@ -39,5 +39,12 @@ namespace FP2.Model
             }
             return result;
         }
+
+        public bool updateUser()
+        {
+            string data = "Username = '" + id + "', Pass = '" + password + "'";
+            string kondisi = "Username = '" + id + "'";
+            return temp.Update("Akun", data, kondisi);
+        }
     }
 }

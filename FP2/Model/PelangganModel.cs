@@ -32,7 +32,7 @@ namespace FP2.Model
                 dp = template.Select("Pelanggan", null);
             }else
             {
-                string kondisi = "No_Pelanggan LIKE '%"+cari+"%' OR Nama LIKE '%"+cari+"%' OR No_HP LIKE '%"+cari+"%' OR Tgl_Registrasi LIKE '%"+cari+"%' OR Alamat LIKE '%"+cari+"%' OR";
+                string kondisi = "No_Pelanggan LIKE '%"+cari+"%' OR Nama LIKE '%"+cari+"%' OR No_HP LIKE '%"+cari+"%' OR Tgl_Registrasi LIKE '%"+cari+"%' OR Alamat LIKE '%"+cari+"%'";
                 dp = template.Select("Pelanggan", kondisi);
             }
             return dp;

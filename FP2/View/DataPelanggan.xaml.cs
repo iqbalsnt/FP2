@@ -102,5 +102,10 @@ namespace FP2.View
             editPelanggan.Show();
             Close();
         }
+
+        private void BtnCari_Click(object sender, RoutedEventArgs e)
+        {
+            Pelanggan.dataPelanggan();
+        }
     }
 }

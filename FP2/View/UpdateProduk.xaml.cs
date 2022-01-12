@@ -35,7 +35,7 @@ namespace FP2.View
 
         private void BtnUbah_Click(object sender, RoutedEventArgs e)
         {
-            produk.updateProduk();
+            produk.updateProduk(); 
         }
 
         private void BtnBack_Click(object sender, RoutedEventArgs e)

@@ -19,9 +19,11 @@ namespace FP2.View
     /// </summary>
     public partial class PengaturanAkun : Window
     {
+        private Controller.Pengguna Pengguna;
         public PengaturanAkun()
         {
             InitializeComponent();
+            Pengguna = new Controller.Pengguna(this);
         }
         private void BtnBack_MouseDown(object sender, MouseButtonEventArgs e)
         {
@@ -35,6 +37,11 @@ namespace FP2.View
             DashboardWindows dashboardWindows = new DashboardWindows();
             dashboardWindows.Show();
             Close();
+        }
+
+        private void BtnSimpan_Click(object sender, RoutedEventArgs e)
+        {
+            Pengguna.updateuser();
         }
     }
 }

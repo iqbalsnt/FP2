@@ -95,5 +95,10 @@ namespace FP2.View
                 Close();
             }
         }
+
+        private void BtnCari_Click(object sender, RoutedEventArgs e)
+        {
+            Produk.dataProduk();
+        }
     }
 }

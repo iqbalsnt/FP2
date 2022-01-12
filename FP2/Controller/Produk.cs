@@ -17,7 +17,6 @@ namespace FP2.Controller
 
         public Produk(View.Paket produkView)
         {
-            //tambahProduk = new View.TambahProduk();
             produkModel = new Model.ProdukModel();
             this.produkView = produkView;
         }
