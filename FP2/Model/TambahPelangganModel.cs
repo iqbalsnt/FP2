@@ -28,6 +28,7 @@ namespace FP2.Model
         {
                 string data = "'"+Nama+"','"+No_HP+"','"+Tgl_Registrasi+"','"+Alamat+"'";
             return template.Insert("Pelanggan", data);
+            
         }
     }
 }
