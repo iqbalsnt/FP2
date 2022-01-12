@@ -95,5 +95,12 @@ namespace FP2.View
             tambahPelanggan.Show();
             Close();
         }
+
+        private void BtnEdit_Click(object sender, RoutedEventArgs e)
+        {
+            EditPelanggan editPelanggan = new EditPelanggan();
+            editPelanggan.Show();
+            Close();
+        }
     }
 }

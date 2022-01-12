@@ -29,5 +29,12 @@ namespace FP2.View
             dataPelanggan.Show();
             Close();
         }
+
+        private void btnBack_Click(object sender, RoutedEventArgs e)
+        {
+            DataPelanggan dataPelanggan = new DataPelanggan();
+            dataPelanggan.Show();
+            Close();
+        }
     }
 }

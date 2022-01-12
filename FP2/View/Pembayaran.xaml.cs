@@ -29,5 +29,12 @@ namespace FP2.View
             dashboardWindows.Show();
             Close();
         }
+
+        private void BtnBack_Click(object sender, RoutedEventArgs e)
+        {
+            DashboardWindows dashboardWindows = new DashboardWindows();
+            dashboardWindows.Show();
+            Close();
+        }
     }
 }

@@ -74,7 +74,7 @@ namespace FP2.View
         private void DgProduk_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             object item = DgProduk.SelectedItem;
-            UpdateProduk.No_Produk = (DgProduk.SelectedCells[0].Column.GetCellContent(item) as TextBlock).Text;
+            //UpdateProduk.No_Produk = (DgProduk.SelectedCells[0].Column.GetCellContent(item) as TextBlock).Text;
             //UpdateProduk.Nama_Produk = (DgProduk.SelectedCells[1].Column.GetCellContent(item) as TextBlock).Text;
             //UpdateProduk.Harga = (DgProduk.SelectedCells[2].Column.GetCellContent(item) as TextBlock).Text;
         }

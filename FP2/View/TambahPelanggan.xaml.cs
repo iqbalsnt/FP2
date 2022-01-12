@@ -42,5 +42,12 @@ namespace FP2.View
         {
             controller.addPelanggan();
         }
+
+        private void btnBack_Click_1(object sender, RoutedEventArgs e)
+        {
+            DataPelanggan dataPelanggan = new DataPelanggan();
+            dataPelanggan.Show();
+            Close();
+        }
     }
 }
