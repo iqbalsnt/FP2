@@ -54,7 +54,7 @@ namespace FP2.Controller
                 
             }
             {
-                MessageBox.Show("Gagal Menambahkan Produk");
+                //MessageBox.Show("Gagal Menambahkan Produk");
             }
         }
 
