@@ -63,7 +63,7 @@
                 <ComboBoxItem Content="November"/>
                 <ComboBoxItem Content="Desember"/>
             </ComboBox>
-            <Button x:Name="BtnSimpan" Content="Simpan" HorizontalAlignment="Left" Margin="123,0,0,0" Height="40" VerticalAlignment="Center" Width="228" BorderBrush="Black" Background="#FFCDECD0" Grid.Column="1"/>
+            <Button x:Name="BtnSimpan" Content="Simpan" HorizontalAlignment="Left" Margin="123,0,0,0" Height="40" VerticalAlignment="Center" Width="228" BorderBrush="Black" Background="#FFCDECD0" Grid.Column="1" Click="BtnSimpan_Click"/>
         </Grid>
 
         <Grid Grid.Row="2">

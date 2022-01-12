@@ -26,6 +26,8 @@ namespace FP2.View
             pembayaran = new Controller.Pembayaran(this);
             pembayaran.DataPembayaran();
         }
+
+        
         private void BtnBack_MouseDown(object sender, MouseButtonEventArgs e)
         {
             DashboardWindows dashboardWindows = new DashboardWindows();
@@ -38,6 +40,11 @@ namespace FP2.View
             DashboardWindows dashboardWindows = new DashboardWindows();
             dashboardWindows.Show();
             Close();
+        }
+
+        private void BtnSimpan_Click(object sender, RoutedEventArgs e)
+        {
+            pembayaran.insertPembayaran();
         }
     }
 }

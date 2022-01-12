@@ -11,8 +11,8 @@ namespace FP2.Model
     {
         ModelTemplate template;
 
-        public static string No_PaketPelanggan;
-        public static string Bulan_Bayar;
+        public string No_PaketPelanggan { get; set; }
+        public string Bulan_Bayar { get; set; }
 
         public PembayaranModel()
         {

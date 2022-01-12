@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data;
+using System.Windows;
 
 namespace FP2.Controller
 {
@@ -27,7 +28,17 @@ namespace FP2.Controller
 
         public void insertPembayaran()
         {
-            
+            pembayaranModel.No_PaketPelanggan = pembayaranView.txtID.Text;
+            pembayaranModel.Bulan_Bayar = pembayaranView.cmbBulanBayar.SelectionBoxItem.ToString();
+            bool result = pembayaranModel.insertPembayaran();
+            if(result)
+            {
+                MessageBox.Show("Berhasil Menambahkan Pembayaran");
+            }
+            else
+            {
+                MessageBox.Show("Gagal Menambahkan Pembayaran");
+            }
         }
     }
 }
