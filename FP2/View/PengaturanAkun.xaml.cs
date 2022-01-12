@@ -42,6 +42,7 @@ namespace FP2.View
         private void BtnSimpan_Click(object sender, RoutedEventArgs e)
         {
             Pengguna.updateuser();
+            Close();
         }
     }
 }
