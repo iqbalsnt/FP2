@@ -19,14 +19,12 @@ namespace FP2.View
     /// </summary>
     public partial class Pembayaran : Window
     {
-        //private Controller.Pembayaran pembayaran;
+        private Controller.Pembayaran pembayaran;
         public Pembayaran()
         {
             InitializeComponent();
-            //pembayaran = new Controller.Pembayaran(this);
-
-            //function untuk menampilkan data 
-           // pembayaran.DataPelanggan();
+            pembayaran = new Controller.Pembayaran(this);
+            pembayaran.DataPembayaran();
         }
         private void BtnBack_MouseDown(object sender, MouseButtonEventArgs e)
         {
