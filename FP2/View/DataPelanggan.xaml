@@ -6,6 +6,27 @@
         xmlns:local="clr-namespace:FP2.View"
         mc:Ignorable="d"
         Title="DataPelanggan" Height="450" Width="800">
+    <Window.Resources>
+        <ControlTemplate x:Key="TextBoxBaseControlTemplate" TargetType="{x:Type TextBoxBase}">
+            <Border Background="{TemplateBinding Background}" 
+                x:Name="Bd" BorderBrush="Black"
+                BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="10">
+                <ScrollViewer x:Name="PART_ContentHost"/>
+            </Border>
+            <ControlTemplate.Triggers>
+                <Trigger Property="IsEnabled" Value="False">
+                    <Setter Property="Background" Value="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" TargetName="Bd"/>
+                    <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}"/>
+                </Trigger>
+                <Trigger Property="Width" Value="Auto">
+                    <Setter Property="MinWidth" Value="100"/>
+                </Trigger>
+                <Trigger Property="Height" Value="Auto">
+                    <Setter Property="MinHeight" Value="20"/>
+                </Trigger>
+            </ControlTemplate.Triggers>
+        </ControlTemplate>
+    </Window.Resources>
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="78"/>
@@ -35,8 +56,8 @@
 
             <Grid Grid.Column="1">
                 <Label Content="ID Pelanggan" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="Black" FontSize="16" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
-                <TextBox x:Name="txtCari" HorizontalAlignment="Left" Height="27" VerticalAlignment="Center" Width="250" Margin="110,0,0,0" />
-                <Button x:Name="BtnCari" Content="Cari" HorizontalAlignment="Left" Height="27" VerticalAlignment="Center" Width="90" BorderBrush="Black" Background="#FFCDECD0" Margin="370,0,0,0"/>
+                <TextBox x:Name="txtCari" Template="{StaticResource TextBoxBaseControlTemplate}" HorizontalAlignment="Left" Height="27" VerticalAlignment="Center" Width="250" Margin="110,5,0,0" />
+                <Button x:Name="BtnCari" Content="Cari" HorizontalAlignment="Left" Height="27" VerticalAlignment="Center" Width="90" BorderBrush="Black" Background="#FFCDECD0" Margin="370,5,0,0"/>
             </Grid>
         </Grid>
         

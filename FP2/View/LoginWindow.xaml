@@ -6,6 +6,46 @@
         xmlns:local="clr-namespace:FP2"
         mc:Ignorable="d"
         Title="Login" Height="450" Width="800" Background="#FFCDECD0">
+    <Window.Resources>
+        <ControlTemplate x:Key="TextBoxBaseControlTemplate" TargetType="{x:Type TextBoxBase}">
+            <Border Background="{TemplateBinding Background}" 
+                x:Name="Bd" BorderBrush="Black"
+                BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="10">
+                <ScrollViewer x:Name="PART_ContentHost"/>
+            </Border>
+            <ControlTemplate.Triggers>
+                <Trigger Property="IsEnabled" Value="False">
+                    <Setter Property="Background" Value="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" TargetName="Bd"/>
+                    <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}"/>
+                </Trigger>
+                <Trigger Property="Width" Value="Auto">
+                    <Setter Property="MinWidth" Value="100"/>
+                </Trigger>
+                <Trigger Property="Height" Value="Auto">
+                    <Setter Property="MinHeight" Value="20"/>
+                </Trigger>
+            </ControlTemplate.Triggers>
+        </ControlTemplate>
+        <ControlTemplate x:Key="passwordbox" TargetType="{x:Type PasswordBox}">
+            <Border Background="{TemplateBinding Background}" 
+        x:Name="Bd" BorderBrush="Black"
+        BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="10">
+            </Border>
+            <ControlTemplate.Triggers>
+                <Trigger Property="IsEnabled" Value="False">
+                    <Setter Property="Background" Value="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" TargetName="Bd"/>
+                    <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}"/>
+                </Trigger>
+                <Trigger Property="Width" Value="Auto">
+                    <Setter Property="MinWidth" Value="100"/>
+                </Trigger>
+                <Trigger Property="Height" Value="Auto">
+                    <Setter Property="MinHeight" Value="20"/>
+                </Trigger>
+            </ControlTemplate.Triggers>
+        </ControlTemplate>
+    </Window.Resources>
+
     <StackPanel Height="350" Width="600" Background="#FF3B9A40" Margin="100,42.02,93.6,27.98">
         <Grid Height="330" Width="580" Margin="10">
             <Grid.ColumnDefinitions>
@@ -25,9 +65,9 @@
                 <Label Content="Log In" FontSize="18" FontWeight="Bold" Margin="40,0,40,10" Padding="0"/>
 
                 <Label Content="Username" Margin="40,15,40,0" Padding="0"/>
-                <TextBox x:Name="txtUsername" Margin="40,5,40,0" />
+                <TextBox x:Name="txtUsername" Template="{StaticResource TextBoxBaseControlTemplate}" Margin="40,5,40,0" />
                 <Label Content="Password" Margin="40,15,40,0" Padding="0"/>
-                <PasswordBox x:Name="txtPassword" Margin="40,5,40,0" />
+                <PasswordBox x:Name="txtPassword"  Margin="40,5,40,0" Template="{StaticResource passwordbox}" BorderBrush="Black"/>
 
                 <Button x:Name="btnLogin" Content="Login" Background="#FF3B9A40" Foreground="White" Margin="40,20,40,0"
                     Height="27" Click="btnLogin_Click" Style="{DynamicResource MenuButton}"/>

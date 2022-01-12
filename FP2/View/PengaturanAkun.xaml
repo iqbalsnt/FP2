@@ -23,8 +23,8 @@
             <Label Content="Ubah Username dan Password" FontSize="15"  Foreground="Black" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="60,0,0,179" FontFamily="Arial Rounded MT Bold"/>
             <Label Content="Username Baru" FontSize="15" Foreground="Black" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="100,0,0,50"/>
             <Label Content="Password Baru" FontSize="15" Foreground="Black" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="100,90,0,0"/>
-            <TextBox x:Name="txtUsername" HorizontalAlignment="Left" Height="27" Margin="270,0,0,43" VerticalAlignment="Center" Width="440" />
-            <TextBox x:Name="txtPassword" HorizontalAlignment="Left" Height="27" Margin="270,0,0,-96" VerticalAlignment="Center" Width="440" />
+            <TextBox x:Name="txtUsername" HorizontalAlignment="Left" Height="27" Margin="270,0,0,43" VerticalAlignment="Center" Width="440" Template="{StaticResource TextBoxBaseControlTemplate}" />
+            <TextBox x:Name="txtPassword" HorizontalAlignment="Left" Height="27" Margin="270,0,0,-96" VerticalAlignment="Center" Width="440" Template="{StaticResource TextBoxBaseControlTemplate}"/>
             <Button x:Name="BtnSimpan" Content="Simpan" HorizontalAlignment="Left" Height="28" VerticalAlignment="Center" Width="128" Margin="580,0,0,-190" BorderBrush="Black" Background="#FFCDECD0"/>
         </Grid>
 

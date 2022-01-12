@@ -6,6 +6,27 @@
         xmlns:local="clr-namespace:FP2.View"
         mc:Ignorable="d"
         Title="EditPelanggan" Height="450" Width="800">
+    <Window.Resources>
+        <ControlTemplate x:Key="TextBoxBaseControlTemplate" TargetType="{x:Type TextBoxBase}">
+            <Border Background="{TemplateBinding Background}" 
+                x:Name="Bd" BorderBrush="Black"
+                BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="10">
+                <ScrollViewer x:Name="PART_ContentHost"/>
+            </Border>
+            <ControlTemplate.Triggers>
+                <Trigger Property="IsEnabled" Value="False">
+                    <Setter Property="Background" Value="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" TargetName="Bd"/>
+                    <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}"/>
+                </Trigger>
+                <Trigger Property="Width" Value="Auto">
+                    <Setter Property="MinWidth" Value="100"/>
+                </Trigger>
+                <Trigger Property="Height" Value="Auto">
+                    <Setter Property="MinHeight" Value="20"/>
+                </Trigger>
+            </ControlTemplate.Triggers>
+        </ControlTemplate>
+    </Window.Resources>
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="78"/>
@@ -23,22 +44,22 @@
 
         <Grid Grid.Row="1">
             <Label Content="Nama" FontSize="18" Foreground="Black" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="80,0,0,0" FontFamily="Arial Rounded MT Bold" />
-            <TextBox x:Name="txtNama" HorizontalAlignment="Left" Height="35" VerticalAlignment="Center" Width="482" TextAlignment="Left" FontSize="17" Margin="300,0,0,0"/>
+            <TextBox x:Name="txtNama" Template="{StaticResource TextBoxBaseControlTemplate}" HorizontalAlignment="Left" Height="35" VerticalAlignment="Center" Width="482" TextAlignment="Left" FontSize="17" Margin="300,0,0,0"/>
         </Grid>
 
         <Grid Grid.Row="2">
             <Label Content="No Handphone" FontSize="18" Foreground="Black" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="80,0,0,0" FontFamily="Arial Rounded MT Bold" />
-            <TextBox x:Name="txtHp" HorizontalAlignment="Left" Height="35" VerticalAlignment="Center" Width="482" TextAlignment="Left" FontSize="17" Margin="300,0,0,0"/>
+            <TextBox x:Name="txtHp" Template="{StaticResource TextBoxBaseControlTemplate}" HorizontalAlignment="Left" Height="35" VerticalAlignment="Center" Width="482" TextAlignment="Left" FontSize="17" Margin="300,0,0,0"/>
         </Grid>
 
         <Grid Grid.Row="3">
             <Label Content="Tanggal Registrasi" FontSize="18" Foreground="Black" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="80,0,0,0" FontFamily="Arial Rounded MT Bold" />
-            <DatePicker x:Name="DpRegis" HorizontalAlignment="Left" Height="35"  VerticalAlignment="Center" Width="482" FontSize="17" SelectedDateFormat="Short" Grid.RowSpan="2" Margin="300,0,0,0"/>
+            <DatePicker x:Name="DpRegis"  HorizontalAlignment="Left" Height="35"  VerticalAlignment="Center" Width="482" FontSize="17" SelectedDateFormat="Short" Grid.RowSpan="2" Margin="300,0,0,0"/>
         </Grid>
 
         <Grid Grid.Row="4">
             <Label Content="Alamat" FontSize="18" Foreground="Black" VerticalContentAlignment="Top" HorizontalAlignment="Left" Margin="80,0,0,0" FontFamily="Arial Rounded MT Bold" />
-            <TextBox x:Name="txtAlamat" HorizontalAlignment="Left" Height="100" VerticalAlignment="Center" Width="482" TextAlignment="Left" FontSize="17" Margin="300,0,0,0"/>
+            <TextBox x:Name="txtAlamat" Template="{StaticResource TextBoxBaseControlTemplate}" HorizontalAlignment="Left" Height="100" VerticalAlignment="Center" Width="482" TextAlignment="Left" FontSize="17" Margin="300,0,0,0"/>
         </Grid>
 
         <Grid Grid.Row="5">

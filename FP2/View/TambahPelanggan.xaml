@@ -23,12 +23,12 @@
 
         <Grid Grid.Row="1">
             <Label Content="Nama" FontSize="18" Foreground="Black" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="80,0,0,0" FontFamily="Arial Rounded MT Bold" />
-            <TextBox x:Name="txtNama" HorizontalAlignment="Left" Height="35" VerticalAlignment="Center" Width="482" TextAlignment="Left" FontSize="17" Margin="300,0,0,0"/>
+            <TextBox x:Name="txtNama" HorizontalAlignment="Left" Height="35" VerticalAlignment="Center" Width="482" TextAlignment="Left" FontSize="17" Margin="300,0,0,0" Template="{StaticResource TextBoxBaseControlTemplate}"/>
         </Grid>
 
         <Grid Grid.Row="2">
             <Label Content="No Handphone" FontSize="18" Foreground="Black" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="80,0,0,0" FontFamily="Arial Rounded MT Bold" />
-            <TextBox x:Name="txtHp" HorizontalAlignment="Left" Height="35" VerticalAlignment="Center" Width="482" TextAlignment="Left" FontSize="17" Margin="300,0,0,0"/>
+            <TextBox x:Name="txtHp" HorizontalAlignment="Left" Height="35" VerticalAlignment="Center" Width="482" TextAlignment="Left" FontSize="17" Margin="300,0,0,0" Template="{StaticResource TextBoxBaseControlTemplate}"/>
         </Grid>
 
         <Grid Grid.Row="3">
@@ -38,7 +38,7 @@
 
         <Grid Grid.Row="4">
             <Label Content="Alamat" FontSize="18" Foreground="Black" VerticalContentAlignment="Top" HorizontalAlignment="Left" Margin="80,0,0,0" FontFamily="Arial Rounded MT Bold" />
-            <TextBox x:Name="txtAlamat" HorizontalAlignment="Left" Height="100" VerticalAlignment="Center" Width="482" TextAlignment="Left" FontSize="17" Margin="300,0,0,0"/>
+            <TextBox x:Name="txtAlamat" HorizontalAlignment="Left" Height="100" VerticalAlignment="Center" Width="482" TextAlignment="Left" FontSize="17" Margin="300,0,0,0" Template="{StaticResource TextBoxBaseControlTemplate}"/>
         </Grid>
 
         <Grid Grid.Row="5">

@@ -12,7 +12,7 @@
             <ColumnDefinition Width="140"/>
             <ColumnDefinition />
         </Grid.ColumnDefinitions>
-        <Grid Background="#FF227A2B">
+        <Grid Background="#FF227A2B" >
             <Grid.RowDefinitions>
                 <RowDefinition Height="80"/>
                 <RowDefinition Height="50"/>
@@ -71,7 +71,7 @@
             </Grid>
 
 
-            <Border Grid.Row="1" Background="#CDECD0" Height="50" Width="600" CornerRadius="10"  HorizontalAlignment="Left" Margin="40,0,0,0">
+            <Border Grid.Row="1" Background="#CDECD0" Height="50" Width="600"  CornerRadius="10"  HorizontalAlignment="Left" Margin="40,0,0,0">
                 <Label Content="Selamat Datang di Aplikasi AREBI V1.0" HorizontalAlignment="Center" Margin="0,0,0,0" VerticalAlignment="Center" Height="40" Width="232" 
                         Foreground="Black" HorizontalContentAlignment="Center" 
                  VerticalContentAlignment="Center"/>
@@ -80,12 +80,7 @@
             <Label Grid.Row="2" Content="Dashboard" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="35,0,0,0" FontFamily="Copperplate Gothic Bold" FontSize="24" />
 
             <Grid Grid.Row="3">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition/>
-                    <ColumnDefinition/>
-                </Grid.ColumnDefinitions>
-
-                <Border Grid.Column="0" Background="#CDECD0" Height="50" Width="261" HorizontalAlignment="Left" CornerRadius="10" Margin="40,0,0,0">
+                <Border Background="#CDECD0" Height="50" Width="261" HorizontalAlignment="Left" CornerRadius="10" Margin="40,0,0,0">
                     <DockPanel>
                         <Label Content="Total Pelanggan" HorizontalAlignment="left" VerticalAlignment="Center" Foreground="Black" FontWeight="Bold" FontSize="16" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="10,0,0,0"/>
                         <Label Content="15" HorizontalAlignment="left" VerticalAlignment="Center" Foreground="Black" FontWeight="Bold" FontSize="16" HorizontalContentAlignment="Center"  VerticalContentAlignment="Center" Margin="50,0,0,0"/>
@@ -93,16 +88,16 @@
                     </DockPanel>
                 </Border>
 
-                <Border Grid.Column="1" Background="#CDECD0" Height="50" Width="261" HorizontalAlignment="Left" CornerRadius="10" Margin="30,0,0,0">
+                <Border Background="#CDECD0" Height="50" Width="261" HorizontalAlignment="Left" CornerRadius="10" Margin="360,0,0,0">
                     <DockPanel>
                         <Label Content="Produk" HorizontalAlignment="left" VerticalAlignment="Center" Foreground="Black" FontWeight="Bold" FontSize="16" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="10,0,0,0"/>
                         <Label Content="7" HorizontalAlignment="left" VerticalAlignment="Center" Foreground="Black" FontWeight="Bold" FontSize="16" HorizontalContentAlignment="Center"  VerticalContentAlignment="Center" Margin="125,0,0,0"/>
                         <Image Width="30" Height="30" VerticalAlignment="Center" HorizontalAlignment="Right" Source="/Icon/dashicons_products (1).png" Margin="0,0,10,0"/>
                     </DockPanel>
                 </Border>
+
             </Grid>
 
-            
 
 
 
