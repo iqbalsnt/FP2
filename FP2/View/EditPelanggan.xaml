@@ -60,7 +60,7 @@
 
         <Grid Grid.Row="4">
             <Label Content="Tanggal Registrasi" FontSize="18" Foreground="Black" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="80,0,0,0" FontFamily="Arial Rounded MT Bold" />
-            <DatePicker x:Name="DpRegis"  HorizontalAlignment="Left" Height="35"  VerticalAlignment="Center" Width="482" FontSize="17" SelectedDateFormat="Short" Grid.RowSpan="2" Margin="300,0,0,0"/>
+            <DatePicker x:Name="DpRegis"  HorizontalAlignment="Left" Height="35"   VerticalAlignment="Center" Width="482" FontSize="17" SelectedDateFormat="Short" Grid.RowSpan="2" Margin="300,0,0,0"/>
         </Grid>
 
         <Grid Grid.Row="5">
@@ -69,8 +69,8 @@
         </Grid>
 
         <Grid Grid.Row="7">
-            <Button x:Name="BtnTambah" Content="Simpan" HorizontalAlignment="Left" Height="28"  Grid.Row="1" VerticalAlignment="Center" Width="128" Margin="653,50,0,23" BorderBrush="#FFCDECD0" Background="#FFCDECD0" Click="BtnTambah_Click"/>
-            <Button x:Name="btnBack" Content="Back" HorizontalAlignment="Left"  VerticalAlignment="Center" Height="29" Width="107" Foreground="Black" BorderBrush="#FFCDECD0" Background="#FFCDECD0" Margin="500,50,0,23" MouseDown="btnBack_MouseDown" Click="btnBack_Click"/>
+            <Button x:Name="BtnTambah" Content="Simpan" HorizontalAlignment="Left" Height="28"  Grid.Row="1" VerticalAlignment="Center" Width="128" Margin="653,10,0,23" BorderBrush="#FFCDECD0" Background="#FFCDECD0" Click="BtnTambah_Click"/>
+            <Button x:Name="btnBack" Content="Back" HorizontalAlignment="Left"  VerticalAlignment="Center" Height="29" Width="107" Foreground="Black" BorderBrush="#FFCDECD0" Background="#FFCDECD0" Margin="500,10,0,23" MouseDown="btnBack_MouseDown" Click="btnBack_Click"/>
 
         </Grid>
 
