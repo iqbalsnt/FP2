@@ -31,7 +31,7 @@
         </Grid>
 
         <Grid Grid.Row="2">
-            <Button x:Name="BtnBack" Content="Back" HorizontalAlignment="Right" Height="28" VerticalAlignment="Center" Width="128" Margin="610,-10,60,-0" BorderBrush="#FFCDECD0" Background="#FFCDECD0"/>
+            <Button x:Name="BtnBack" Content="Back" HorizontalAlignment="Right" Height="28" VerticalAlignment="Center" Width="128" Margin="610,-10,60,-0" BorderBrush="#FFCDECD0" Background="#FFCDECD0" Click="BtnBack_Click"/>
         </Grid>
 
     </Grid>

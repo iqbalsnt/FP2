@@ -40,7 +40,9 @@ namespace FP2.View
 
         private void BtnBack_Click(object sender, RoutedEventArgs e)
         {
-
+            Paket paket = new Paket();
+            paket.Show();
+            Close();
         }
     }
 }
