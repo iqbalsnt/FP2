@@ -45,10 +45,12 @@ namespace FP2.View
         private void BtnSimpan_Click(object sender, RoutedEventArgs e)
         {
             pembayaran.insertPembayaran();
+            pembayaran.DataPembayaran();
         }
 
         private void BtnCari_Click(object sender, RoutedEventArgs e)
         {
+            pembayaran.DataPembayaran();
             pembayaran.DataPembayaran();
         }
     }
