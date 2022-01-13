@@ -54,6 +54,7 @@ namespace FP2.View
         private void BtnTambah_Click(object sender, RoutedEventArgs e)
         {
             paketPelanggan.InsertPaketPelanggan();
+            paketPelanggan.PaketPelangganShow();
         }
 
         private void BtnDelete_Click(object sender, RoutedEventArgs e)
