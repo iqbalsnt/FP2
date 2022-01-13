@@ -33,8 +33,9 @@
             <RowDefinition Height="50"/>
             <RowDefinition Height="50"/>
             <RowDefinition Height="50"/>
-            <RowDefinition Height="130"/>
-            <RowDefinition />
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="*" />
         </Grid.RowDefinitions>
 
         <Grid Grid.Row="0" Background="#CDECD0">
@@ -43,28 +44,33 @@
         </Grid>
 
         <Grid Grid.Row="1">
+            <Label Content="ID Pelanggan" FontSize="18" Foreground="Black" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="80,0,0,0" FontFamily="Arial Rounded MT Bold" />
+            <TextBox x:Name="txtIdPelanggan" Template="{StaticResource TextBoxBaseControlTemplate}" HorizontalAlignment="Left" Height="35" VerticalAlignment="Center" Width="482" TextAlignment="Left" FontSize="17" Margin="300,0,0,0"/>
+        </Grid>
+
+        <Grid Grid.Row="2">
             <Label Content="Nama" FontSize="18" Foreground="Black" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="80,0,0,0" FontFamily="Arial Rounded MT Bold" />
             <TextBox x:Name="txtNama" Template="{StaticResource TextBoxBaseControlTemplate}" HorizontalAlignment="Left" Height="35" VerticalAlignment="Center" Width="482" TextAlignment="Left" FontSize="17" Margin="300,0,0,0"/>
         </Grid>
 
-        <Grid Grid.Row="2">
+        <Grid Grid.Row="3">
             <Label Content="No Handphone" FontSize="18" Foreground="Black" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="80,0,0,0" FontFamily="Arial Rounded MT Bold" />
             <TextBox x:Name="txtHp" Template="{StaticResource TextBoxBaseControlTemplate}" HorizontalAlignment="Left" Height="35" VerticalAlignment="Center" Width="482" TextAlignment="Left" FontSize="17" Margin="300,0,0,0"/>
         </Grid>
 
-        <Grid Grid.Row="3">
+        <Grid Grid.Row="4">
             <Label Content="Tanggal Registrasi" FontSize="18" Foreground="Black" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="80,0,0,0" FontFamily="Arial Rounded MT Bold" />
             <DatePicker x:Name="DpRegis"  HorizontalAlignment="Left" Height="35"  VerticalAlignment="Center" Width="482" FontSize="17" SelectedDateFormat="Short" Grid.RowSpan="2" Margin="300,0,0,0"/>
         </Grid>
 
-        <Grid Grid.Row="4">
-            <Label Content="Alamat" FontSize="18" Foreground="Black" VerticalContentAlignment="Top" HorizontalAlignment="Left" Margin="80,0,0,0" FontFamily="Arial Rounded MT Bold" />
-            <TextBox x:Name="txtAlamat" Template="{StaticResource TextBoxBaseControlTemplate}" HorizontalAlignment="Left" Height="100" VerticalAlignment="Center" Width="482" TextAlignment="Left" FontSize="17" Margin="300,0,0,0"/>
+        <Grid Grid.Row="5">
+            <Label Content="Alamat" FontSize="18" Foreground="Black" VerticalContentAlignment="Top" HorizontalAlignment="Left" Margin="80,7,0,0" FontFamily="Arial Rounded MT Bold" />
+            <TextBox x:Name="txtAlamat" Template="{StaticResource TextBoxBaseControlTemplate}" HorizontalAlignment="Left" Height="35" VerticalAlignment="Center" Width="482" TextAlignment="Left" FontSize="17" Margin="300,0,0,0"/>
         </Grid>
 
-        <Grid Grid.Row="5">
-            <Button x:Name="BtnTambah" Content="Simpan" HorizontalAlignment="Left" Height="28"  Grid.Row="1" VerticalAlignment="Center" Width="128" Margin="653,0,0,23" BorderBrush="#FFCDECD0" Background="#FFCDECD0"/>
-            <Button x:Name="btnBack" Content="Back" HorizontalAlignment="Left"  VerticalAlignment="Bottom" Height="29" Width="107" Foreground="Black" BorderBrush="#FFCDECD0" Background="#FFCDECD0" Margin="500,0,0,23" MouseDown="btnBack_MouseDown" Click="btnBack_Click"/>
+        <Grid Grid.Row="7">
+            <Button x:Name="BtnTambah" Content="Simpan" HorizontalAlignment="Left" Height="28"  Grid.Row="1" VerticalAlignment="Center" Width="128" Margin="653,50,0,23" BorderBrush="#FFCDECD0" Background="#FFCDECD0"/>
+            <Button x:Name="btnBack" Content="Back" HorizontalAlignment="Left"  VerticalAlignment="Center" Height="29" Width="107" Foreground="Black" BorderBrush="#FFCDECD0" Background="#FFCDECD0" Margin="500,50,0,23" MouseDown="btnBack_MouseDown" Click="btnBack_Click"/>
 
         </Grid>
 
