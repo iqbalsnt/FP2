@@ -19,9 +19,11 @@ namespace FP2.View
     /// </summary>
     public partial class EditPelanggan : Window
     {
+        private Controller.Pelanggan pelanggan;
         public EditPelanggan()
         {
             InitializeComponent();
+            pelanggan = new Controller.Pelanggan(this);
         }
         private void btnBack_MouseDown(object sender, MouseButtonEventArgs e)
         {
@@ -34,6 +36,12 @@ namespace FP2.View
         {
             DataPelanggan dataPelanggan = new DataPelanggan();
             dataPelanggan.Show();
+            Close();
+        }
+
+        private void BtnTambah_Click(object sender, RoutedEventArgs e)
+        {
+            pelanggan.UpdatePelanggan();
             Close();
         }
     }

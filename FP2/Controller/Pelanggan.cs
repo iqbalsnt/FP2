@@ -13,7 +13,7 @@ namespace FP2.Controller
         //deklarasi objek utk view & model
         private Model.PelangganModel PelangganModel;
         private View.DataPelanggan DataPelanggan;
-        private View.updatePelanggan updatePelanggan;
+        private View.EditPelanggan updatePelanggan;
 
         //instance
         public Pelanggan(View.DataPelanggan DataPelanggan)
@@ -22,7 +22,7 @@ namespace FP2.Controller
             this.DataPelanggan = DataPelanggan;
         }
 
-        public Pelanggan(View.updatePelanggan updatePelanggan)
+        public Pelanggan(View.EditPelanggan updatePelanggan)
         {
             PelangganModel = new Model.PelangganModel();
             this.updatePelanggan = updatePelanggan;
@@ -47,6 +47,24 @@ namespace FP2.Controller
             else
             {
                 MessageBox.Show("Data Pelanggan Gagal Berhasil Dihapus");
+            }
+        }
+
+        public void UpdatePelanggan()
+        {
+            PelangganModel.No_Pelanggan = updatePelanggan.txtIdPelanggan.Text;
+            PelangganModel.Nama = updatePelanggan.txtNama.Text;
+            PelangganModel.No_HP = updatePelanggan.txtHp.Text;
+            PelangganModel.Tgl_Registrasi = updatePelanggan.DpRegis.SelectedDate.ToString();
+            PelangganModel.Alamat = updatePelanggan.txtAlamat.Text;
+            bool result = PelangganModel.updatePelanggan();
+            if( result )
+            {
+                MessageBox.Show("Berhasil Ubah Data Pelanggan");
+            }
+            else
+            {
+                MessageBox.Show("Gagal Ubah Data Pelanggan");
             }
         }
 
