@@ -73,7 +73,7 @@
             </Grid.ColumnDefinitions>
             <Label Content="Cari" FontSize="15" Foreground="Black" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="30,0,0,0"/>
             <TextBox x:Name="txtCari" HorizontalAlignment="Left" Height="28" Margin="90,0,0,0" VerticalAlignment="Center" Width="440" Template="{StaticResource TextBoxBaseControlTemplate}" Grid.ColumnSpan="2"/>
-            <Button x:Name="BtnCari" Content="Cari" HorizontalAlignment="Left" Margin="167,0,0,0" Height="28" VerticalAlignment="Center" Width="228" BorderBrush="Black" Background="#FFCDECD0" Grid.Column="1"/>
+            <Button x:Name="BtnCari" Content="Cari" HorizontalAlignment="Left" Margin="167,0,0,0" Height="28" VerticalAlignment="Center" Width="228" BorderBrush="Black" Background="#FFCDECD0" Grid.Column="1" Click="BtnCari_Click"/>
         </Grid>
 
         <Grid Grid.Row="3">

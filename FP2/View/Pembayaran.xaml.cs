@@ -46,5 +46,10 @@ namespace FP2.View
         {
             pembayaran.insertPembayaran();
         }
+
+        private void BtnCari_Click(object sender, RoutedEventArgs e)
+        {
+            pembayaran.DataPembayaran();
+        }
     }
 }

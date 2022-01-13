@@ -44,5 +44,12 @@ namespace FP2.Model
             string data = ("No_Pelanggan = '" + No_Pelanggan + "'");
             return template.Delete("Pelanggan", data);
         }
+
+        public bool updatePelanggan()
+        {
+            string data = "Nama = '" + Nama + "', No_HP = '" + No_HP + "', Tgl_Registrasi= '" + Tgl_Registrasi + "', Alamat = '" + Alamat + "'";
+            string kondisi = "No_Pelanggan = '" + No_Pelanggan + "'";
+            return template.Update("Pelanggan", data, kondisi);
+        }
     }
 }

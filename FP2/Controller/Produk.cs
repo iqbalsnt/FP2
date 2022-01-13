@@ -73,7 +73,7 @@ namespace FP2.Controller
 
         public void updateProduk()
         {
-            produkModel.No_Produk = View.Paket.No_Produk;
+            produkModel.No_Produk = upProduk.txtIdProduk.Text;
             produkModel.Nama_Produk = upProduk.txtNamaProduk.Text;
             produkModel.Harga = upProduk.txtHarga.Text;
 

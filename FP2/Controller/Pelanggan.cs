@@ -13,12 +13,19 @@ namespace FP2.Controller
         //deklarasi objek utk view & model
         private Model.PelangganModel PelangganModel;
         private View.DataPelanggan DataPelanggan;
+        private View.updatePelanggan updatePelanggan;
 
         //instance
         public Pelanggan(View.DataPelanggan DataPelanggan)
         {
             PelangganModel = new Model.PelangganModel();
             this.DataPelanggan = DataPelanggan;
+        }
+
+        public Pelanggan(View.updatePelanggan updatePelanggan)
+        {
+            PelangganModel = new Model.PelangganModel();
+            this.updatePelanggan = updatePelanggan;
         }
 
         //show data pelanggan di datagrid (View)
@@ -42,5 +49,7 @@ namespace FP2.Controller
                 MessageBox.Show("Data Pelanggan Gagal Berhasil Dihapus");
             }
         }
+
+        
     }
 }
