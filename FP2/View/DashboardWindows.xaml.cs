@@ -93,5 +93,12 @@ namespace FP2.View
             loginWindow.Show();
             Close();
         }
+
+        private void DpTambahPaket_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            PaketPelanggan paketPelanggan = new PaketPelanggan();
+            paketPelanggan.Show();
+            Close();
+        }
     }
 }

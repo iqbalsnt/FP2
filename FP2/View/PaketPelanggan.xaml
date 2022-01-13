@@ -26,12 +26,12 @@
             <TextBox x:Name="txtIdPelanggan" Template="{StaticResource TextBoxBaseControlTemplate}" HorizontalAlignment="Left" Height="35" VerticalAlignment="Center" Width="482" TextAlignment="Left" FontSize="17" Margin="300,0,0,0"/>
         </Grid>
 
-        <Grid Grid.Row="2">
-            <Label Content="No Handphone" FontSize="18" Foreground="Black" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="80,0,0,0" FontFamily="Arial Rounded MT Bold" />
-            <TextBox x:Name="txtHP" Template="{StaticResource TextBoxBaseControlTemplate}" HorizontalAlignment="Left" Height="35" VerticalAlignment="Center" Width="482" TextAlignment="Left" FontSize="17" Margin="300,0,0,0"/>
+        <Grid Grid.Row="3">
+            <TextBox x:Name="txtCari" Template="{StaticResource TextBoxBaseControlTemplate}" HorizontalAlignment="Left" Height="35" VerticalAlignment="Center" Width="482" TextAlignment="Left" FontSize="17" Margin="300,0,0,0"/>
+            <Button x:Name="BtnCari" Content="Cari" HorizontalAlignment="Left" Height="28"  Grid.Row="1" VerticalAlignment="Center" Width="128" Margin="90,0,0,0" BorderBrush="#FFCDECD0" Background="#FFCDECD0" Click="BtnCari_Click" />
         </Grid>
 
-        <Grid Grid.Row="3">
+        <Grid Grid.Row="2">
             <Label Content="ID Produk" FontSize="18" Foreground="Black" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="80,0,0,0" FontFamily="Arial Rounded MT Bold" />
             <TextBox x:Name="txtIdProduk" Template="{StaticResource TextBoxBaseControlTemplate}" HorizontalAlignment="Left" Height="35" VerticalAlignment="Center" Width="482" TextAlignment="Left" FontSize="17" Margin="300,0,0,0"/>
         </Grid>
@@ -41,8 +41,9 @@
         </Grid>
 
         <Grid Grid.Row="5">
-            <Button x:Name="BtnTambah" Content="Tambah" HorizontalAlignment="Left" Height="28"  Grid.Row="1" VerticalAlignment="Center" Width="128" Margin="650,0,0,0" BorderBrush="#FFCDECD0" Background="#FFCDECD0" />
-            <Button x:Name="BtnBack" Content="Back" HorizontalAlignment="Left"  VerticalAlignment="Center" Height="29" Width="107" Foreground="Black" BorderBrush="#FFCDECD0" Background="#FFCDECD0"  Margin="510,0,-300,0"/>
+            <Button x:Name="BtnTambah" Content="Tambah" HorizontalAlignment="Left" Height="28"  Grid.Row="1" VerticalAlignment="Center" Width="128" Margin="650,0,0,0" BorderBrush="#FFCDECD0" Background="#FFCDECD0" Click="BtnTambah_Click" />
+            <Button x:Name="BtnBack" Content="Back" HorizontalAlignment="Left"  VerticalAlignment="Center" Height="29" Width="107" Foreground="Black" BorderBrush="#FFCDECD0" Background="#FFCDECD0"  Margin="510,0,-300,0" Click="BtnBack_Click"/>
+            <Button x:Name="BtnDelete" Content="Hapus" HorizontalAlignment="Left"  VerticalAlignment="Center" Height="29" Width="107" Foreground="Black" BorderBrush="#FFCDECD0" Background="#FFCDECD0"  Margin="370,0,-300,0" Click="BtnDelete_Click" />
         </Grid>
 
     </Grid>
