@@ -40,5 +40,19 @@ namespace FP2.Controller
                 MessageBox.Show("Gagal Menambahkan Pembayaran");
             }
         }
+
+        public void deletePembayaran()
+        {
+            pembayaranModel.No_Pembayaran = View.Pembayaran.No_Pembayaran;
+            bool result = pembayaranModel.deletePembayaran();
+            if(result)
+            {
+                MessageBox.Show("Berhasil Menghapus Data Pembayaran");
+            }
+            else
+            {
+                MessageBox.Show("Gagal Menghapus Data Pembayaran");
+            }
+        }
     }
 }

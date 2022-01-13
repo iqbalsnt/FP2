@@ -13,6 +13,7 @@ namespace FP2.Model
 
         public string No_PaketPelanggan { get; set; }
         public string Bulan_Bayar { get; set; }
+        public string No_Pembayaran { get; set; }
 
         public PembayaranModel()
         {
@@ -38,6 +39,12 @@ namespace FP2.Model
         {
             string data = "'" + No_PaketPelanggan + "','" + Bulan_Bayar + "'";
             return template.Insert("Pembayaran", data);
+        }
+
+        public bool deletePembayaran()
+        {
+            string dl = "No_Pembayaran = '" + No_Pembayaran + "'";
+            return template.Delete("Pembayaran", dl);
         }
     }
 }
