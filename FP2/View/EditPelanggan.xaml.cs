@@ -41,6 +41,7 @@ namespace FP2.View
 
         private void BtnTambah_Click(object sender, RoutedEventArgs e)
         {
+            //
             pelanggan.UpdatePelanggan();
             Close();
         }

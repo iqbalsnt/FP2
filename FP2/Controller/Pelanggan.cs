@@ -61,6 +61,8 @@ namespace FP2.Controller
             if( result )
             {
                 MessageBox.Show("Berhasil Ubah Data Pelanggan");
+                View.DataPelanggan dataPelanggan = new View.DataPelanggan();
+                dataPelanggan.Show();
             }
             else
             {
